@@ -1,0 +1,61 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Wed Nov 13 09:22:37 2024                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v21.19-s058_1 (64bit) 04/04/2024 09:59 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: NanoRoute 21.19-s058_1 NR231113-0413/21_19-UB (database version 18.20.605) {superthreading v2.17}
+#@(#)CDS: AAE 21.19-s004 (64bit) 04/04/2024 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: CTE 21.19-s010_1 () Mar 27 2024 01:55:37 ( )
+#@(#)CDS: SYNTECH 21.19-s002_1 () Sep  6 2023 22:17:00 ( )
+#@(#)CDS: CPE v21.19-s026
+#@(#)CDS: IQuantus/TQuantus 21.1.1-s966 (64bit) Wed Mar 8 10:22:20 PST 2023 (Linux 3.10.0-693.el7.x86_64)
+
+ls ../phy/db
+ls
+ls ../phy/db/part
+pwd
+cd ../../
+ls
+cd SiLagoNN_solution/exe/
+pwd
+read_db ../phy/db/part/drra_wrapper.enc.dat/pnr/
+assemble_design -block_dir ../phy/db/part/Silago_top_left_corner.enc.dat/pnr/ -encounter_format
+assemble_design -block_dir ../phy/db/part/Silago_top.enc.dat/pnr/ -encounter_format
+gui_select -rect {2699.06350 -447.34450 1186.89100 1736.11900}
+set_layer_preference M2 -is_visible 0
+set_layer_preference M1 -is_visible 0
+set_layer_preference M1 -is_visible 1
+set_layer_preference M1 -is_visible 0
+set_layer_preference M1 -is_visible 1
+set_layer_preference M2 -is_visible 1
+set_layer_preference M2 -is_visible 0
+set_layer_preference M2 -is_visible 1
+set_layer_preference M2 -is_visible 0
+set_layer_preference M1 -is_visible 0
+set_layer_preference M1 -is_visible 1
+set_layer_preference M2 -is_visible 1
+set_layer_preference M2 -is_visible 0
+set_layer_preference M2 -is_visible 1
+set_layer_preference M2 -is_visible 0
+set_layer_preference M1 -is_visible 0
+set_layer_preference M1 -is_visible 1
+set_layer_preference M1 -is_visible 0
+set_layer_preference M1 -is_visible 1
+set_layer_preference M1 -is_visible 0
+set_layer_preference M1 -is_visible 1
+set_layer_preference M1 -is_visible 0
+set_layer_preference M2 -is_visible 1
+set_layer_preference M2 -is_visible 0
+set_layer_preference M2 -is_visible 1
+set_layer_preference M1 -is_visible 1
+assemble_design -block_dir ../phy/db/part/Silago_bot_left_corner.enc.dat/pnr/ -encounter_format
+assemble_design -block_dir ../phy/db/part/Silago_bot.enc.dat/pnr/ -encounter_format
+assemble_design -block_dir ../phy/db/part/Silago_bot_right_corner.enc.dat/ -encounter_format
+assemble_design -block_dir ../phy/db/part/Silago_bot_right_corner.enc.dat/pnr/ -encounter_format
+assemble_design -block_dir ../phy/db/part/Silago_top_right_corner.enc.dat/pnr/ -encounter_format
+write_db ../phy/db/
+ls ../phy/db
+gui_select -point {2351.38250 2841.39150}
