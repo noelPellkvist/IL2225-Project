@@ -36,8 +36,8 @@ source ../../syn_dc.setup; #we initialize syn_dc
 set TOP_NAME drra_wrapper; #we set the top to drra_wrapper
 
 # Directories for output material
-set REPORT_DIR  ../syn/rpt;      # synthesis reports: timing, area, etc.
-set OUT_DIR ../syn/db;           # output files: netlist, sdf sdc etc.
+set REPORT_DIR  ../rpt;      # synthesis reports: timing, area, etc.
+set OUT_DIR ../db;           # output files: netlist, sdf sdc etc.
 set SOURCE_DIR ../../rtl;           # rtl code that should be synthesised
 set SYN_DIR ../syn;              # synthesis directory, synthesis scripts constraints etc.
 

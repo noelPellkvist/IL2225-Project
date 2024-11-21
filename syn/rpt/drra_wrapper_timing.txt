@@ -1,0 +1,129 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : drra_wrapper
+Version: V-2023.12-SP4
+Date   : Thu Nov 21 15:01:41 2024
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: NCCOM   Library: tcbn90gtc
+Wire Load Model Mode: segmented
+
+  Startpoint: Silago_bot_l_corner_inst_0_1/SILEGO_cell/MTRF_cell/seq_gen/reg_port_type_reg[0]
+              (rising edge-triggered flip-flop)
+  Endpoint: dimarch_silego_data_out[0][0][251]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  RACCU_15           ZeroWireload          tcbn90gtc
+  RaccuRF_15         ZeroWireload          tcbn90gtc
+  autoloop_15        ZeroWireload          tcbn90gtc
+  sequencer_15       ZeroWireload          tcbn90gtc
+  RaccuAndLoop_15    ZeroWireload          tcbn90gtc
+  register_file_top_15
+                     ZeroWireload          tcbn90gtc
+  MTRF_cell_15       ZeroWireload          tcbn90gtc
+  shadowReg_AGU_85   ZeroWireload          tcbn90gtc
+  AGU_RFblock_29     ZeroWireload          tcbn90gtc
+  register_file_15   ZeroWireload          tcbn90gtc
+  data_selector_0    ZeroWireload          tcbn90gtc
+  Silago_top_left_corner
+                     ZeroWireload          tcbn90gtc
+  drra_wrapper       ZeroWireload          tcbn90gtc
+  silego_15          ZeroWireload          tcbn90gtc
+  Silago_bot_left_corner
+                     ZeroWireload          tcbn90gtc
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  Silago_bot_l_corner_inst_0_1/SILEGO_cell/MTRF_cell/seq_gen/reg_port_type_reg[0]/CP (DFCNQD1)
+                                                          0.00       0.00 r
+  Silago_bot_l_corner_inst_0_1/SILEGO_cell/MTRF_cell/seq_gen/reg_port_type_reg[0]/Q (DFCNQD1)
+                                                          0.18       0.18 f
+  Silago_bot_l_corner_inst_0_1/SILEGO_cell/MTRF_cell/seq_gen/reg_port_type[0] (sequencer_15)
+                                                          0.00       0.18 f
+  Silago_bot_l_corner_inst_0_1/SILEGO_cell/MTRF_cell/reg_top/reg_port_type[0] (register_file_top_15)
+                                                          0.00       0.18 f
+  Silago_bot_l_corner_inst_0_1/SILEGO_cell/MTRF_cell/reg_top/U359/ZN (INVD0)
+                                                          0.07       0.24 r
+  Silago_bot_l_corner_inst_0_1/SILEGO_cell/MTRF_cell/reg_top/U6/ZN (ND3D1)
+                                                          0.27       0.52 f
+  Silago_bot_l_corner_inst_0_1/SILEGO_cell/MTRF_cell/reg_top/U184/ZN (NR2D0)
+                                                          0.13       0.65 r
+  Silago_bot_l_corner_inst_0_1/SILEGO_cell/MTRF_cell/reg_top/ShR_rd_DMR/instr_start (shadowReg_AGU_85)
+                                                          0.00       0.65 r
+  Silago_bot_l_corner_inst_0_1/SILEGO_cell/MTRF_cell/reg_top/ShR_rd_DMR/U212/ZN (INVD0)
+                                                          0.04       0.69 f
+  Silago_bot_l_corner_inst_0_1/SILEGO_cell/MTRF_cell/reg_top/ShR_rd_DMR/U211/ZN (ND2D0)
+                                                          0.37       1.06 r
+  Silago_bot_l_corner_inst_0_1/SILEGO_cell/MTRF_cell/reg_top/ShR_rd_DMR/U204/ZN (OAI22D0)
+                                                          0.09       1.15 f
+  Silago_bot_l_corner_inst_0_1/SILEGO_cell/MTRF_cell/reg_top/ShR_rd_DMR/instr_initial_delay_out[2] (shadowReg_AGU_85)
+                                                          0.00       1.15 f
+  Silago_bot_l_corner_inst_0_1/SILEGO_cell/MTRF_cell/reg_top/AGU_Rd_Dimarch_instantiate/instr_initial_delay[2] (AGU_RFblock_29)
+                                                          0.00       1.15 f
+  Silago_bot_l_corner_inst_0_1/SILEGO_cell/MTRF_cell/reg_top/AGU_Rd_Dimarch_instantiate/U342/ZN (NR2D0)
+                                                          0.07       1.21 r
+  Silago_bot_l_corner_inst_0_1/SILEGO_cell/MTRF_cell/reg_top/AGU_Rd_Dimarch_instantiate/U341/ZN (INR4D0)
+                                                          0.13       1.34 r
+  Silago_bot_l_corner_inst_0_1/SILEGO_cell/MTRF_cell/reg_top/AGU_Rd_Dimarch_instantiate/U228/ZN (INR4D0)
+                                                          0.12       1.46 r
+  Silago_bot_l_corner_inst_0_1/SILEGO_cell/MTRF_cell/reg_top/AGU_Rd_Dimarch_instantiate/U227/ZN (INVD0)
+                                                          0.06       1.52 f
+  Silago_bot_l_corner_inst_0_1/SILEGO_cell/MTRF_cell/reg_top/AGU_Rd_Dimarch_instantiate/U127/ZN (OAI222D0)
+                                                          0.17       1.69 r
+  Silago_bot_l_corner_inst_0_1/SILEGO_cell/MTRF_cell/reg_top/AGU_Rd_Dimarch_instantiate/addr_out[1] (AGU_RFblock_29)
+                                                          0.00       1.69 r
+  Silago_bot_l_corner_inst_0_1/SILEGO_cell/MTRF_cell/reg_top/RegisterFile/rd_addr_dimarch[1] (register_file_15)
+                                                          0.00       1.69 r
+  Silago_bot_l_corner_inst_0_1/SILEGO_cell/MTRF_cell/reg_top/RegisterFile/U4241/ZN (INVD0)
+                                                          0.06       1.75 f
+  Silago_bot_l_corner_inst_0_1/SILEGO_cell/MTRF_cell/reg_top/RegisterFile/U4239/ZN (NR2D0)
+                                                          0.07       1.82 r
+  Silago_bot_l_corner_inst_0_1/SILEGO_cell/MTRF_cell/reg_top/RegisterFile/U365/Z (BUFFD0)
+                                                          0.06       1.88 r
+  Silago_bot_l_corner_inst_0_1/SILEGO_cell/MTRF_cell/reg_top/RegisterFile/U340/Z (BUFFD0)
+                                                          0.05       1.93 r
+  Silago_bot_l_corner_inst_0_1/SILEGO_cell/MTRF_cell/reg_top/RegisterFile/U291/Z (BUFFD0)
+                                                          0.13       2.06 r
+  Silago_bot_l_corner_inst_0_1/SILEGO_cell/MTRF_cell/reg_top/RegisterFile/U3756/ZN (AOI22D0)
+                                                          0.05       2.11 f
+  Silago_bot_l_corner_inst_0_1/SILEGO_cell/MTRF_cell/reg_top/RegisterFile/U3754/ZN (ND2D0)
+                                                          0.03       2.14 r
+  Silago_bot_l_corner_inst_0_1/SILEGO_cell/MTRF_cell/reg_top/RegisterFile/dimarch_data_out[251] (register_file_15)
+                                                          0.00       2.14 r
+  Silago_bot_l_corner_inst_0_1/SILEGO_cell/MTRF_cell/reg_top/dimarch_data_out[251] (register_file_top_15)
+                                                          0.00       2.14 r
+  Silago_bot_l_corner_inst_0_1/SILEGO_cell/MTRF_cell/U121/Z (AN2D0)
+                                                          0.06       2.20 r
+  Silago_bot_l_corner_inst_0_1/SILEGO_cell/MTRF_cell/dimarch_data_out[251] (MTRF_cell_15)
+                                                          0.00       2.20 r
+  Silago_bot_l_corner_inst_0_1/SILEGO_cell/dimarch_data_out[251] (silego_15)
+                                                          0.00       2.20 r
+  Silago_bot_l_corner_inst_0_1/dimarch_data_out[251] (Silago_bot_left_corner)
+                                                          0.00       2.20 r
+  Silago_top_l_corner_inst_0_0/data_in_next[251] (Silago_top_left_corner)
+                                                          0.00       2.20 r
+  Silago_top_l_corner_inst_0_0/u_data_selector/data_in_next[251] (data_selector_0)
+                                                          0.00       2.20 r
+  Silago_top_l_corner_inst_0_0/u_data_selector/U149/Z (AO22D0)
+                                                          0.06       2.25 r
+  Silago_top_l_corner_inst_0_0/u_data_selector/data_out[251] (data_selector_0)
+                                                          0.00       2.25 r
+  Silago_top_l_corner_inst_0_0/dimarch_data_out[251] (Silago_top_left_corner)
+                                                          0.00       2.25 r
+  dimarch_silego_data_out[0][0][251] (inout)              0.00       2.25 r
+  data arrival time                                                  2.25
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+1
