@@ -30,8 +30,7 @@
 ################################################################################
 
 #1. source setup file to extract global libraries
-source ../../syn_dc.setup; 
-#we initialize syn_dc                   
+source ../../synopsys_dc.setup;
 
 #2. set the TOP_NAME of the design
 set TOP_NAME drra_wrapper;
@@ -69,15 +68,15 @@ set_operating_condition NCCOM
 source ${SYN_DIR}/constraints.sdc
 
 #9. compile
-#compile -map_effort medium
+compile -map_effort medium
 
 #10. report area, timing, power, constraints, cell in the report directory with a suitable name
-#report_constraints > ${REPORT_DIR}/${TOP_NAME}_constratints.sdc
-#report_area > ${REPORT_DIR}/${TOP_NAME}_area.txt
-#report_cell > ${REPORT_DIR}/${TOP_NAME}_cells.txt
-#report_timing > ${REPORT_DIR}/${TOP_NAME}_timing.txt
-#report_power > ${REPORT_DIR}/${TOP_NAME}_power.txt
+report_constraints > ${REPORT_DIR}/${TOP_NAME}_constratints.sdc
+report_area > ${REPORT_DIR}/${TOP_NAME}_area.txt
+report_cell > ${REPORT_DIR}/${TOP_NAME}_cells.txt
+report_timing > ${REPORT_DIR}/${TOP_NAME}_timing.txt
+report_power > ${REPORT_DIR}/${TOP_NAME}_power.txt
 
 #11. export the netlist, ddc and sdf file in out direcory with a suitable name
-#write -hierarchy -format ddc -output ${OUT_DIR}/${TOP_NAME}.ddc
-#write -hierarchy -format verilog -output ${OUT_DIR}/${TOP_NAME}.v
+write -hierarchy -format ddc -output ${OUT_DIR}/${TOP_NAME}.ddc
+write -hierarchy -format verilog -output ${OUT_DIR}/${TOP_NAME}.v
