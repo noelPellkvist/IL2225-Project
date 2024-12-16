@@ -30,16 +30,18 @@
 ################################################################################
 
 #1. source setup file to extract global libraries
-source ../../syn_dc.setup; #we initialize syn_dc                   
+source ../../syn_dc.setup; 
+#we initialize syn_dc                   
 
 #2. set the TOP_NAME of the design
-set TOP_NAME drra_wrapper; #we set the top to drra_wrapper
+set TOP_NAME drra_wrapper;
+ #we set the top to drra_wrapper
 
 # Directories for output material
 set REPORT_DIR  ../rpt;      # synthesis reports: timing, area, etc.
 set OUT_DIR ../db;           # output files: netlist, sdf sdc etc.
 set SOURCE_DIR ../../rtl;           # rtl code that should be synthesised
-set SYN_DIR ../syn;              # synthesis directory, synthesis scripts constraints etc.
+set SYN_DIR ../;              # synthesis directory, synthesis scripts constraints etc.
 
 #3. set hierarchy file to read the design 
 set hierarchy_files [split [read [open ${SOURCE_DIR}/${TOP_NAME}_hierarchy.txt r]] "\n"]
@@ -55,26 +57,27 @@ foreach filename [lrange ${hierarchy_files} 0 end-1] {
 elaborate ${TOP_NAME}
 
 #6. set current_design 
-current_design ${TOP_NAME} #we set TOP_NAME as current because of flat(top) synth
+
+current_design ${TOP_NAME}
 
 #7. set wireload model
 set_wire_load_mode segmented 
-set_wire_load_model -name TSMC8K_Lowk_Aggresive #?
+set_wire_load_model -name TSMC8K_Lowk_Aggresive
 set_operating_condition NCCOM
 
 #8. source sdc file
 source ${SYN_DIR}/constraints.sdc
 
 #9. compile
-compile -map_effort medium
+#compile -map_effort medium
 
 #10. report area, timing, power, constraints, cell in the report directory with a suitable name
-report_constraints > ${REPORT_DIR}/${TOP_NAME}_constratints.sdc
-report_area > ${REPORT_DIR}/${TOP_NAME}_area.txt
-report_cell > ${REPORT_DIR}/${TOP_NAME}_cells.txt
-report_timing > ${REPORT_DIR}/${TOP_NAME}_timing.txt
-report_power > ${REPORT_DIR}/${TOP_NAME}_power.txt
+#report_constraints > ${REPORT_DIR}/${TOP_NAME}_constratints.sdc
+#report_area > ${REPORT_DIR}/${TOP_NAME}_area.txt
+#report_cell > ${REPORT_DIR}/${TOP_NAME}_cells.txt
+#report_timing > ${REPORT_DIR}/${TOP_NAME}_timing.txt
+#report_power > ${REPORT_DIR}/${TOP_NAME}_power.txt
 
 #11. export the netlist, ddc and sdf file in out direcory with a suitable name
-write -hierarchy -format ddc -output ${OUT_DIR}/${TOP_NAME}.ddc
-write -hierarchy -format verilog -output ${OUT_DIR}/${TOP_NAME}.v
+#write -hierarchy -format ddc -output ${OUT_DIR}/${TOP_NAME}.ddc
+#write -hierarchy -format verilog -output ${OUT_DIR}/${TOP_NAME}.v
