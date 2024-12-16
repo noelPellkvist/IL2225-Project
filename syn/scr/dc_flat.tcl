@@ -30,15 +30,15 @@
 ################################################################################
 
 #1. source setup file to extract global libraries
-source ../../synopsys_dc.setup;
+source ../../synopsys_dc.setup;                    
 
 #2. set the TOP_NAME of the design
 set TOP_NAME drra_wrapper;
  #we set the top to drra_wrapper
 
 # Directories for output material
-set REPORT_DIR  ../rpt;      # synthesis reports: timing, area, etc.
-set OUT_DIR ../db;           # output files: netlist, sdf sdc etc.
+set REPORT_DIR  ../../rpt;      # synthesis reports: timing, area, etc.
+set OUT_DIR ../../db;           # output files: netlist, sdf sdc etc.
 set SOURCE_DIR ../../rtl;           # rtl code that should be synthesised
 set SYN_DIR ../;              # synthesis directory, synthesis scripts constraints etc.
 
