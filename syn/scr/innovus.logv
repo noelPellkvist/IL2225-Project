@@ -1,0 +1,54 @@
+[12/24 12:12:03      0s] 
+[12/24 12:12:03      0s] Cadence Innovus(TM) Implementation System.
+[12/24 12:12:03      0s] Copyright 2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+[12/24 12:12:03      0s] 
+[12/24 12:12:03      0s] Version:	v21.19-s058_1, built Thu Apr 4 09:59:17 PDT 2024
+[12/24 12:12:03      0s] Options:	-stylus 
+[12/24 12:12:03      0s] Date:		Tue Dec 24 12:12:03 2024
+[12/24 12:12:03      0s] Host:		e323f1d85b98 (x86_64 w/Linux 5.15.0-125-generic) (12cores*48cpus*Intel(R) Xeon(R) CPU E7-8857 v2 @ 3.00GHz 30720KB)
+[12/24 12:12:03      0s] OS:		Rocky Linux 8.10 (Green Obsidian)
+[12/24 12:12:03      0s] 
+[12/24 12:12:03      0s] License:
+[12/24 12:12:03      0s] 		[12:12:03.143691] Configured Lic search path (21.01-s002): 52247@mozzarella.ict.kth.se:3000@lic08.ug.kth.se:29000@lic06.ug.kth.se
+[12/24 12:12:03      0s] 
+[12/24 12:12:03      0s] 		invs	Innovus Implementation System	21.1	checkout succeeded
+[12/24 12:12:03      0s] 		8 CPU jobs allowed with the current license(s). Use set_multi_cpu_usage to set your required CPU count.
+[12/24 12:12:16     11s] 
+[12/24 12:12:16     11s] 
+[12/24 12:12:23     18s] Reset Parastics called with the command setExtractRCMode -reset[12/24 12:12:25     20s] **WARN: (IMPOPT-801):	Genus executable not found in PATH. Install Genus, add the path to the genus executable in the PATH variable and rerun Innovus.
+@(#)CDS: Innovus v21.19-s058_1 (64bit) 04/04/2024 09:59 (Linux 3.10.0-693.el7.x86_64)
+[12/24 12:12:26     21s] @(#)CDS: NanoRoute 21.19-s058_1 NR231113-0413/21_19-UB (database version 18.20.605) {superthreading v2.17}
+[12/24 12:12:26     21s] @(#)CDS: AAE 21.19-s004 (64bit) 04/04/2024 (Linux 3.10.0-693.el7.x86_64)
+[12/24 12:12:26     21s] @(#)CDS: CTE 21.19-s010_1 () Mar 27 2024 01:55:37 ( )
+[12/24 12:12:26     21s] @(#)CDS: SYNTECH 21.19-s002_1 () Sep  6 2023 22:17:00 ( )
+[12/24 12:12:26     21s] @(#)CDS: CPE v21.19-s026
+[12/24 12:12:26     21s] @(#)CDS: IQuantus/TQuantus 21.1.1-s966 (64bit) Wed Mar 8 10:22:20 PST 2023 (Linux 3.10.0-693.el7.x86_64)
+[12/24 12:12:26     21s] @(#)CDS: OA 22.60-p087 Thu Feb  9 09:35:26 2023
+[12/24 12:12:26     21s] @(#)CDS: SGN 20.10-d001 (01-Jun-2020) (64 bit executable, Qt5.9.0)
+[12/24 12:12:26     21s] @(#)CDS: RCDB 11.15.0
+[12/24 12:12:26     21s] @(#)CDS: STYLUS 21.12-s019_1 (12/20/2022 05:13 PST)
+[12/24 12:12:26     21s] @(#)CDS: SystemPlanner-21.18-10439 (21.18) (2023-03-01 15:40:03+0800)
+[12/24 12:12:26     21s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_66116_e323f1d85b98_marlat_KBdikW.
+
+[12/24 12:12:26     21s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_66116_e323f1d85b98_marlat_KBdikW.
+[12/24 12:12:26     21s] 
+[12/24 12:12:27     21s] Change the soft stacksize limit to 0.2%RAM (6192 mbytes). Set global soft_stack_size_limit to change the value.
+[12/24 12:12:30     25s] 
+[12/24 12:12:30     25s] **INFO:  MMMC transition support version v31-84 
+[12/24 12:12:30     25s] 
+[12/24 12:12:34     29s] @innovus 1> 
+[01/13 13:15:49 388317s] --------------------------------------------------------------------------------
+[01/13 13:15:49 388317s] Exiting Innovus on Mon Jan 13 13:15:49 2025
+[01/13 13:15:49 388317s]   Total CPU time:     107:51:58
+[01/13 13:15:49 388317s]   Total real time:    481:03:47
+[01/13 13:15:49 388317s]   Peak memory (main): 959.82MB
+[01/13 13:15:49 388317s] 
+[01/13 13:15:49 388317s] 
+[01/13 13:15:49 388317s] *** Memory Usage v#1 (Current mem = 1064.828M, initial mem = 494.957M) ***
+[01/13 13:15:49 388317s] 
+[01/13 13:15:49 388317s] *** Summary of all messages that are not suppressed in this session:
+[01/13 13:15:49 388317s] Severity  ID               Count  Summary                                  
+[01/13 13:15:49 388317s] WARNING   IMPOPT-801           1  Genus executable not found in PATH%s. In...
+[01/13 13:15:49 388317s] *** Message Summary: 1 warning(s), 0 error(s)
+[01/13 13:15:49 388317s] 
+[01/13 13:15:49 388317s] --- Ending "Innovus" (totcpu=107:51:59, real=481:03:46, mem=1064.8M) ---

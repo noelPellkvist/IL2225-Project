@@ -1,0 +1,36 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v21.19-s058_1, built Thu Apr 4 09:59:17 PDT 2024
+Options:	-stylus 
+Date:		Tue Dec 24 12:12:03 2024
+Host:		e323f1d85b98 (x86_64 w/Linux 5.15.0-125-generic) (12cores*48cpus*Intel(R) Xeon(R) CPU E7-8857 v2 @ 3.00GHz 30720KB)
+OS:		Rocky Linux 8.10 (Green Obsidian)
+
+License:
+		[12:12:03.143691] Configured Lic search path (21.01-s002): 52247@mozzarella.ict.kth.se:3000@lic08.ug.kth.se:29000@lic06.ug.kth.se
+
+		invs	Innovus Implementation System	21.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use set_multi_cpu_usage to set your required CPU count.
+
+
+**WARN: (IMPOPT-801):	Genus executable not found in PATH. Install Genus, add the path to the genus executable in the PATH variable and rerun Innovus.
+Create and set the environment variable TMPDIR to /tmp/innovus_temp_66116_e323f1d85b98_marlat_KBdikW.
+
+Change the soft stacksize limit to 0.2%RAM (6192 mbytes). Set global soft_stack_size_limit to change the value.
+
+**INFO:  MMMC transition support version v31-84 
+
+@innovus 1> 
+--------------------------------------------------------------------------------
+Exiting Innovus on Mon Jan 13 13:15:49 2025
+  Total CPU time:     107:51:58
+  Total real time:    481:03:47
+  Peak memory (main): 959.82MB
+
+
+*** Memory Usage v#1 (Current mem = 1064.828M, initial mem = 494.957M) ***
+*** Message Summary: 1 warning(s), 0 error(s)
+
+--- Ending "Innovus" (totcpu=107:51:59, real=481:03:46, mem=1064.8M) ---

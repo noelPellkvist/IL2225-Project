@@ -1,0 +1,33 @@
+Warning: Design 'drra_wrapper' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : area
+Design : drra_wrapper
+Version: V-2023.12-SP4
+Date   : Mon Jan 13 13:52:24 2025
+****************************************
+
+Library(s) Used:
+
+    tcbn90gtc (File: /opt/pdk/tsmc90/tcbn90g_110a/digital/Front_End/timing_power/tcbn90g_110a/tcbn90gtc.db)
+
+Number of ports:                       312557
+Number of nets:                        865006
+Number of cells:                       558294
+Number of combinational cells:         479852
+Number of sequential cells:             73631
+Number of macros/black boxes:               0
+Number of buf/inv:                      82747
+Number of references:                       6
+
+Combinational area:            2231516.046976
+Buf/Inv area:                   143853.695493
+Noncombinational area:         1188191.712240
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:               3419707.759216
+Total area:                 undefined
+
+Information: This design contains black box (unknown) components. (RPT-8)
+1

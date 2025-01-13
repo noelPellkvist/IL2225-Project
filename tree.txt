@@ -1,0 +1,1315 @@
+.
+├── README.md
+├── command.log
+├── db
+│   ├── drra_wrapper.ddc
+│   ├── drra_wrapper.v
+│   └── tmp
+├── default.svf
+├── exe
+│   ├── ADDER_NBITS-STRUCTURAL.syn
+│   ├── ADDER_NBITS.mr
+│   ├── ADDER_NBITS.syn
+│   ├── ADDR_ASSIGN-RTL.syn
+│   ├── ADDR_ASSIGN.mr
+│   ├── ADDR_ASSIGN.syn
+│   ├── ADDR_ASSIGN_DRRA_TOP_L_CORNER-RTL_FIRST_CELL.syn
+│   ├── ADDR_ASSIGN_DRRA_TOP_L_CORNER.mr
+│   ├── ADDR_ASSIGN_DRRA_TOP_L_CORNER.syn
+│   ├── AGU-BEHAVE.syn
+│   ├── AGU.mr
+│   ├── AGU.syn
+│   ├── AGU_RFBLOCK-BEHAVE.syn
+│   ├── AGU_RFBLOCK.mr
+│   ├── AGU_RFBLOCK.syn
+│   ├── ARCH
+│   │   ├── BEH-CELL_CONFIG_SWB.vif
+│   │   ├── BEH-RACCU.vif
+│   │   ├── BEHAVE-AGU.vif
+│   │   ├── BEHAVE-AGU_RFBLOCK.vif
+│   │   ├── BEHAVIOR-SHIFT_UNIT.vif
+│   │   ├── BEHAVIORAL-REGISTER_ROW.vif
+│   │   ├── BEHAVIOUR_RTL-INPUTMUX.vif
+│   │   ├── BEHV-SEQUENCER.vif
+│   │   ├── BEHV_RTL-DIMARCHTILE_BOT.vif
+│   │   ├── BEHV_RTL-DIMARCHTILE_BOT_LEFT_CORNER.vif
+│   │   ├── BEHV_RTL-DIMARCHTILE_BOT_RIGHT_CORNER.vif
+│   │   ├── BEHV_RTL-DIMARCHTILE_TOP.vif
+│   │   ├── BEHV_RTL-DIMARCHTILE_TOP_LEFT_CORNER.vif
+│   │   ├── BEHV_RTL-DIMARCHTILE_TOP_RIGHT_CORNER.vif
+│   │   ├── BEHV_RTL-SRAM_AGU.vif
+│   │   ├── BEHV_RTL-STILE.vif
+│   │   ├── BHV-DIVIDER_PIPE.vif
+│   │   ├── BHV-MAXMIN_UNIT.vif
+│   │   ├── BHV-OFFSET_GEN.vif
+│   │   ├── BHV-SATURATION_UNIT.vif
+│   │   ├── BHV-TWOS_COMPL.vif
+│   │   ├── RTL-ADDR_ASSIGN.vif
+│   │   ├── RTL-AUTOLOOP.vif
+│   │   ├── RTL-BUS_SELECTOR.vif
+│   │   ├── RTL-CONF_MUL_BEH.vif
+│   │   ├── RTL-DATA_CROSSBAR.vif
+│   │   ├── RTL-DATA_SELECTOR.vif
+│   │   ├── RTL-DPU.vif
+│   │   ├── RTL-DRRA_WRAPPER.vif
+│   │   ├── RTL-ISWITCH.vif
+│   │   ├── RTL-MTRF_CELL.vif
+│   │   ├── RTL-NACU.vif
+│   │   ├── RTL-PRIORITYCOMPONENT.vif
+│   │   ├── RTL-PRIORITYMUX.vif
+│   │   ├── RTL-RACCUANDLOOP.vif
+│   │   ├── RTL-RACCURF.vif
+│   │   ├── RTL-REGISTER_FILE_TOP.vif
+│   │   ├── RTL-SAT_N_ROUND.vif
+│   │   ├── RTL-SCALER.vif
+│   │   ├── RTL-SEGMENTED_BUS.vif
+│   │   ├── RTL-SELECTOR.vif
+│   │   ├── RTL-SHADOWREG.vif
+│   │   ├── RTL-SHADOWREG_AGU.vif
+│   │   ├── RTL-SILAGO_BOT.vif
+│   │   ├── RTL-SILAGO_BOT_LEFT_CORNER.vif
+│   │   ├── RTL-SILAGO_BOT_RIGHT_CORNER.vif
+│   │   ├── RTL-SILAGO_TOP.vif
+│   │   ├── RTL-SILAGO_TOP_LEFT_CORNER.vif
+│   │   ├── RTL-SILAGO_TOP_RIGHT_CORNER.vif
+│   │   ├── RTL-SILEGO.vif
+│   │   ├── RTL-SOURCE_DECODER.vif
+│   │   ├── RTL-SOURCE_DECODER_N_FSM.vif
+│   │   ├── RTL-SOURCE_FSM.vif
+│   │   ├── RTL-SRAM_MODEL.vif
+│   │   ├── RTL_FIRST_CELL-ADDR_ASSIGN_DRRA_TOP_L_CORNER.vif
+│   │   ├── SRAM_BEHAVIOUR-SRAM.vif
+│   │   ├── STRUCT-REGISTER_FILE.vif
+│   │   ├── STRUCTURAL-ADDER_NBITS.vif
+│   │   ├── STRUCTURAL-Q_FORMAT_N_TO_ONE.vif
+│   │   ├── STRUCTURAL-Q_FORMAT_ONE_TO_N.vif
+│   │   ├── STRUCTURE-SQUASH_UNIT.vif
+│   │   └── SWITCHBOX_ARCHITECTURE-SWITCHBOX.vif
+│   ├── AUTOLOOP-RTL.syn
+│   ├── AUTOLOOP.mr
+│   ├── AUTOLOOP.syn
+│   ├── BODY
+│   │   ├── BODY-DPU_PKG.vif
+│   │   ├── BODY-FUNCTIONS.vif
+│   │   ├── BODY-ISA_PACKAGE.vif
+│   │   ├── BODY-MISC.vif
+│   │   ├── BODY-NOC_TYPES_N_CONSTANTS.vif
+│   │   ├── BODY-SEQ_FUNCTIONS_PACKAGE.vif
+│   │   ├── BODY-TB_INSTRUCTIONS.vif
+│   │   └── BODY-UTIL_PACKAGE.vif
+│   ├── BUS_SELECTOR-RTL.syn
+│   ├── BUS_SELECTOR.mr
+│   ├── BUS_SELECTOR.syn
+│   ├── CELL_CONFIG_SWB-BEH.syn
+│   ├── CELL_CONFIG_SWB.mr
+│   ├── CELL_CONFIG_SWB.syn
+│   ├── CONF_MUL_BEH-RTL.syn
+│   ├── CONF_MUL_BEH.mr
+│   ├── CONF_MUL_BEH.syn
+│   ├── CROSSBAR_TYPES_N_CONSTANTS.syn
+│   ├── DATA_CROSSBAR-RTL.syn
+│   ├── DATA_CROSSBAR.mr
+│   ├── DATA_CROSSBAR.syn
+│   ├── DATA_SELECTOR-RTL.syn
+│   ├── DATA_SELECTOR.mr
+│   ├── DATA_SELECTOR.syn
+│   ├── DIMARCHTILE_BOT-BEHV_RTL.syn
+│   ├── DIMARCHTILE_BOT.mr
+│   ├── DIMARCHTILE_BOT.syn
+│   ├── DIMARCHTILE_BOT_LEFT_CORNER-BEHV_RTL.syn
+│   ├── DIMARCHTILE_BOT_LEFT_CORNER.mr
+│   ├── DIMARCHTILE_BOT_LEFT_CORNER.syn
+│   ├── DIMARCHTILE_BOT_RIGHT_CORNER-BEHV_RTL.syn
+│   ├── DIMARCHTILE_BOT_RIGHT_CORNER.mr
+│   ├── DIMARCHTILE_BOT_RIGHT_CORNER.syn
+│   ├── DIMARCHTILE_TOP-BEHV_RTL.syn
+│   ├── DIMARCHTILE_TOP.mr
+│   ├── DIMARCHTILE_TOP.syn
+│   ├── DIMARCHTILE_TOP_LEFT_CORNER-BEHV_RTL.syn
+│   ├── DIMARCHTILE_TOP_LEFT_CORNER.mr
+│   ├── DIMARCHTILE_TOP_LEFT_CORNER.syn
+│   ├── DIMARCHTILE_TOP_RIGHT_CORNER-BEHV_RTL.syn
+│   ├── DIMARCHTILE_TOP_RIGHT_CORNER.mr
+│   ├── DIMARCHTILE_TOP_RIGHT_CORNER.syn
+│   ├── DIVIDER_PIPE-BHV.syn
+│   ├── DIVIDER_PIPE.mr
+│   ├── DIVIDER_PIPE.syn
+│   ├── DPU-RTL.syn
+│   ├── DPU.mr
+│   ├── DPU.syn
+│   ├── DPU_PKG.syn
+│   ├── DRRA_WRAPPER-RTL.syn
+│   ├── DRRA_WRAPPER.mr
+│   ├── DRRA_WRAPPER.syn
+│   ├── ENTI
+│   │   ├── ADDER_NBITS.vif
+│   │   ├── ADDR_ASSIGN.vif
+│   │   ├── ADDR_ASSIGN_DRRA_TOP_L_CORNER.vif
+│   │   ├── AGU.vif
+│   │   ├── AGU_RFBLOCK.vif
+│   │   ├── AUTOLOOP.vif
+│   │   ├── BUS_SELECTOR.vif
+│   │   ├── CELL_CONFIG_SWB.vif
+│   │   ├── CONF_MUL_BEH.vif
+│   │   ├── DATA_CROSSBAR.vif
+│   │   ├── DATA_SELECTOR.vif
+│   │   ├── DIMARCHTILE_BOT.vif
+│   │   ├── DIMARCHTILE_BOT_LEFT_CORNER.vif
+│   │   ├── DIMARCHTILE_BOT_RIGHT_CORNER.vif
+│   │   ├── DIMARCHTILE_TOP.vif
+│   │   ├── DIMARCHTILE_TOP_LEFT_CORNER.vif
+│   │   ├── DIMARCHTILE_TOP_RIGHT_CORNER.vif
+│   │   ├── DIVIDER_PIPE.vif
+│   │   ├── DPU.vif
+│   │   ├── DRRA_WRAPPER.vif
+│   │   ├── INPUTMUX.vif
+│   │   ├── ISWITCH.vif
+│   │   ├── MAXMIN_UNIT.vif
+│   │   ├── MTRF_CELL.vif
+│   │   ├── NACU.vif
+│   │   ├── OFFSET_GEN.vif
+│   │   ├── PRIORITYCOMPONENT.vif
+│   │   ├── PRIORITYMUX.vif
+│   │   ├── Q_FORMAT_N_TO_ONE.vif
+│   │   ├── Q_FORMAT_ONE_TO_N.vif
+│   │   ├── RACCU.vif
+│   │   ├── RACCUANDLOOP.vif
+│   │   ├── RACCURF.vif
+│   │   ├── REGISTER_FILE.vif
+│   │   ├── REGISTER_FILE_TOP.vif
+│   │   ├── REGISTER_ROW.vif
+│   │   ├── SATURATION_UNIT.vif
+│   │   ├── SAT_N_ROUND.vif
+│   │   ├── SCALER.vif
+│   │   ├── SEGMENTED_BUS.vif
+│   │   ├── SELECTOR.vif
+│   │   ├── SEQUENCER.vif
+│   │   ├── SHADOWREG.vif
+│   │   ├── SHADOWREG_AGU.vif
+│   │   ├── SHIFT_UNIT.vif
+│   │   ├── SILAGO_BOT.vif
+│   │   ├── SILAGO_BOT_LEFT_CORNER.vif
+│   │   ├── SILAGO_BOT_RIGHT_CORNER.vif
+│   │   ├── SILAGO_TOP.vif
+│   │   ├── SILAGO_TOP_LEFT_CORNER.vif
+│   │   ├── SILAGO_TOP_RIGHT_CORNER.vif
+│   │   ├── SILEGO.vif
+│   │   ├── SOURCE_DECODER.vif
+│   │   ├── SOURCE_DECODER_N_FSM.vif
+│   │   ├── SOURCE_FSM.vif
+│   │   ├── SQUASH_UNIT.vif
+│   │   ├── SRAM.vif
+│   │   ├── SRAM_AGU.vif
+│   │   ├── SRAM_MODEL.vif
+│   │   ├── STILE.vif
+│   │   ├── SWITCHBOX.vif
+│   │   └── TWOS_COMPL.vif
+│   ├── FUNCTIONS.syn
+│   ├── HW_SETTING.syn
+│   ├── INPUTMUX-BEHAVIOUR_RTL.syn
+│   ├── INPUTMUX.mr
+│   ├── INPUTMUX.syn
+│   ├── ISA_PACKAGE.syn
+│   ├── ISWITCH-RTL.syn
+│   ├── ISWITCH.mr
+│   ├── ISWITCH.syn
+│   ├── MAXMIN_UNIT-BHV.syn
+│   ├── MAXMIN_UNIT.mr
+│   ├── MAXMIN_UNIT.syn
+│   ├── MISC.syn
+│   ├── MTRF_CELL-RTL.syn
+│   ├── MTRF_CELL.mr
+│   ├── MTRF_CELL.syn
+│   ├── NACU-RTL.syn
+│   ├── NACU.mr
+│   ├── NACU.syn
+│   ├── NOC_TYPES_N_CONSTANTS.syn
+│   ├── OFFSET_GEN-BHV.syn
+│   ├── OFFSET_GEN.mr
+│   ├── OFFSET_GEN.syn
+│   ├── PACK
+│   │   ├── CROSSBAR_TYPES_N_CONSTANTS.vif
+│   │   ├── DPU_PKG.vif
+│   │   ├── FUNCTIONS.vif
+│   │   ├── HW_SETTING.vif
+│   │   ├── ISA_PACKAGE.vif
+│   │   ├── MISC.vif
+│   │   ├── NOC_TYPES_N_CONSTANTS.vif
+│   │   ├── SEQ_FUNCTIONS_PACKAGE.vif
+│   │   ├── TB_INSTRUCTIONS.vif
+│   │   ├── TOP_CONSTS_TYPES_PACKAGE.vif
+│   │   └── UTIL_PACKAGE.vif
+│   ├── PRIORITYCOMPONENT-RTL.syn
+│   ├── PRIORITYCOMPONENT.mr
+│   ├── PRIORITYCOMPONENT.syn
+│   ├── PRIORITYMUX-RTL.syn
+│   ├── PRIORITYMUX.mr
+│   ├── PRIORITYMUX.syn
+│   ├── Q_FORMAT_N_TO_ONE-STRUCTURAL.syn
+│   ├── Q_FORMAT_N_TO_ONE.mr
+│   ├── Q_FORMAT_N_TO_ONE.syn
+│   ├── Q_FORMAT_ONE_TO_N-STRUCTURAL.syn
+│   ├── Q_FORMAT_ONE_TO_N.mr
+│   ├── Q_FORMAT_ONE_TO_N.syn
+│   ├── RACCU-BEH.syn
+│   ├── RACCU.mr
+│   ├── RACCU.syn
+│   ├── RACCUANDLOOP-RTL.syn
+│   ├── RACCUANDLOOP.mr
+│   ├── RACCUANDLOOP.syn
+│   ├── RACCURF-RTL.syn
+│   ├── RACCURF.mr
+│   ├── RACCURF.syn
+│   ├── REGISTER_FILE-STRUCT.syn
+│   ├── REGISTER_FILE.mr
+│   ├── REGISTER_FILE.syn
+│   ├── REGISTER_FILE_TOP-RTL.syn
+│   ├── REGISTER_FILE_TOP.mr
+│   ├── REGISTER_FILE_TOP.syn
+│   ├── REGISTER_ROW-BEHAVIORAL.syn
+│   ├── REGISTER_ROW.mr
+│   ├── REGISTER_ROW.syn
+│   ├── SATURATION_UNIT-BHV.syn
+│   ├── SATURATION_UNIT.mr
+│   ├── SATURATION_UNIT.syn
+│   ├── SAT_N_ROUND-RTL.syn
+│   ├── SAT_N_ROUND.mr
+│   ├── SAT_N_ROUND.syn
+│   ├── SCALER-RTL.syn
+│   ├── SCALER.mr
+│   ├── SCALER.syn
+│   ├── SEGMENTED_BUS-RTL.syn
+│   ├── SEGMENTED_BUS.mr
+│   ├── SEGMENTED_BUS.syn
+│   ├── SELECTOR-RTL.syn
+│   ├── SELECTOR.mr
+│   ├── SELECTOR.syn
+│   ├── SEQUENCER-BEHV.syn
+│   ├── SEQUENCER.mr
+│   ├── SEQUENCER.syn
+│   ├── SEQ_FUNCTIONS_PACKAGE.syn
+│   ├── SHADOWREG-RTL.syn
+│   ├── SHADOWREG.mr
+│   ├── SHADOWREG.syn
+│   ├── SHADOWREG_AGU-RTL.syn
+│   ├── SHADOWREG_AGU.mr
+│   ├── SHADOWREG_AGU.syn
+│   ├── SHIFT_UNIT-BEHAVIOR.syn
+│   ├── SHIFT_UNIT.mr
+│   ├── SHIFT_UNIT.syn
+│   ├── SILAGO_BOT-RTL.syn
+│   ├── SILAGO_BOT.mr
+│   ├── SILAGO_BOT.syn
+│   ├── SILAGO_BOT_LEFT_CORNER-RTL.syn
+│   ├── SILAGO_BOT_LEFT_CORNER.mr
+│   ├── SILAGO_BOT_LEFT_CORNER.syn
+│   ├── SILAGO_BOT_RIGHT_CORNER-RTL.syn
+│   ├── SILAGO_BOT_RIGHT_CORNER.mr
+│   ├── SILAGO_BOT_RIGHT_CORNER.syn
+│   ├── SILAGO_TOP-RTL.syn
+│   ├── SILAGO_TOP.mr
+│   ├── SILAGO_TOP.syn
+│   ├── SILAGO_TOP_LEFT_CORNER-RTL.syn
+│   ├── SILAGO_TOP_LEFT_CORNER.mr
+│   ├── SILAGO_TOP_LEFT_CORNER.syn
+│   ├── SILAGO_TOP_RIGHT_CORNER-RTL.syn
+│   ├── SILAGO_TOP_RIGHT_CORNER.mr
+│   ├── SILAGO_TOP_RIGHT_CORNER.syn
+│   ├── SILEGO-RTL.syn
+│   ├── SILEGO.mr
+│   ├── SILEGO.syn
+│   ├── SOURCE_DECODER-RTL.syn
+│   ├── SOURCE_DECODER.mr
+│   ├── SOURCE_DECODER.syn
+│   ├── SOURCE_DECODER_N_FSM-RTL.syn
+│   ├── SOURCE_DECODER_N_FSM.mr
+│   ├── SOURCE_DECODER_N_FSM.syn
+│   ├── SOURCE_FSM-RTL.syn
+│   ├── SOURCE_FSM.mr
+│   ├── SOURCE_FSM.syn
+│   ├── SQUASH_UNIT-STRUCTURE.syn
+│   ├── SQUASH_UNIT.mr
+│   ├── SQUASH_UNIT.syn
+│   ├── SRAM-SRAM_BEHAVIOUR.syn
+│   ├── SRAM.mr
+│   ├── SRAM.syn
+│   ├── SRAM_AGU-BEHV_RTL.syn
+│   ├── SRAM_AGU.mr
+│   ├── SRAM_AGU.syn
+│   ├── SRAM_MODEL-RTL.syn
+│   ├── SRAM_MODEL.mr
+│   ├── SRAM_MODEL.syn
+│   ├── STILE-BEHV_RTL.syn
+│   ├── STILE.mr
+│   ├── STILE.syn
+│   ├── SWITCHBOX-SWITCHBOX_ARCHITECTURE.syn
+│   ├── SWITCHBOX.mr
+│   ├── SWITCHBOX.syn
+│   ├── TB_INSTRUCTIONS.syn
+│   ├── TOP_CONSTS_TYPES_PACKAGE.syn
+│   ├── TWOS_COMPL-BHV.syn
+│   ├── TWOS_COMPL.mr
+│   ├── TWOS_COMPL.syn
+│   ├── UTIL_PACKAGE.syn
+│   ├── command.log
+│   ├── default.svf
+│   ├── innovus.cmd
+│   ├── innovus.cmd1
+│   ├── innovus.log
+│   ├── innovus.log1
+│   ├── innovus.logv
+│   └── innovus.logv1
+├── phy
+│   └── scr
+│       ├── assemble_design.tcl
+│       ├── create_partitions.tcl
+│       ├── design_variables.tcl
+│       ├── floorplan.tcl
+│       ├── global_variables.tcl
+│       ├── innovus_flat.tcl
+│       ├── mmmc.tcl
+│       ├── partition.tcl
+│       ├── pnr_partition.sh
+│       ├── pnr_partition.tcl
+│       ├── pnr_top.tcl
+│       └── read_design.tcl
+├── rpt
+│   ├── drra_wrapper_area.txt
+│   ├── drra_wrapper_cells.txt
+│   ├── drra_wrapper_constratints.sdc
+│   ├── drra_wrapper_power.txt
+│   ├── drra_wrapper_timing.txt
+│   └── tmp
+├── rpt_bottomup
+│   ├── drra_wrapper_area.txt
+│   ├── drra_wrapper_cells.txt
+│   ├── drra_wrapper_constratints.sdc
+│   ├── drra_wrapper_power.txt
+│   ├── drra_wrapper_timing.txt
+│   └── drra_wrapper_timing_1.txt
+├── rtl
+│   ├── DW
+│   │   ├── DW01_add.vhd
+│   │   ├── DW_Foundation_comp_arith.vhd
+│   │   ├── DW_div.v
+│   │   ├── DW_div_function.inc
+│   │   ├── DW_div_pipe.v
+│   │   ├── DW_foundation_comp.vhd
+│   │   └── DWpackages.vhd
+│   ├── SRAM
+│   │   └── SRAM_model.vhd
+│   ├── dimarch
+│   │   ├── DiMArchTile.vhd
+│   │   ├── DiMArchTile_Bot.vhd
+│   │   ├── DiMArchTile_Bot_left_corner.vhd
+│   │   ├── DiMArchTile_Bot_right_corner.vhd
+│   │   ├── DiMArchTile_Top.vhd
+│   │   ├── DiMArchTile_Top_left_corner.vhd
+│   │   ├── DiMArchTile_Top_right_corner.vhd
+│   │   ├── SINGLEPORT_SRAM_AGU_types_n_constants.vhd
+│   │   ├── SRAM.vhd
+│   │   ├── SRAMTile_types_n_constants.vhd
+│   │   ├── STile.vhd
+│   │   ├── crossbar_types_n_constants.vhd
+│   │   ├── data_crossbar.vhd
+│   │   ├── iSwitch.vhd
+│   │   ├── noc_types_n_constants.vhd
+│   │   ├── segmented_bus.vhd
+│   │   ├── selector.vhd
+│   │   ├── source_decoder.vhd
+│   │   ├── source_decoder_n_fsm.vhd
+│   │   ├── source_fsm.vhd
+│   │   └── sram_agu.vhd
+│   ├── drra_wrapper_hierarchy.txt
+│   ├── dware_hierarchy.txt
+│   ├── dware_hierarchy_verilog.txt
+│   ├── functions.vhd
+│   ├── hw_setting.vhd
+│   ├── mtrf
+│   │   ├── AGU.vhd
+│   │   ├── AGU_RFblock.vhd
+│   │   ├── DPU
+│   │   │   ├── DPU.vhd
+│   │   │   ├── DPU_pkg.vhd
+│   │   │   ├── MAC_test.vhd
+│   │   │   ├── Maxmin_Unit.vhd
+│   │   │   ├── Q_format_n_to_one.vhd
+│   │   │   ├── Q_format_one_to_n.vhd
+│   │   │   ├── Sat_n_round.vhd
+│   │   │   ├── Saturation_Unit.vhd
+│   │   │   ├── Shift_Unit.vhd
+│   │   │   ├── Squash_Unit.vhd
+│   │   │   ├── adder_nbits.vhd
+│   │   │   ├── conf_mul_Beh.vhd
+│   │   │   ├── divider_pipe.vhd
+│   │   │   ├── hw_setting.vhd
+│   │   │   ├── nacu.vhd
+│   │   │   ├── offset_gen.vhd
+│   │   │   ├── scaler.vhd
+│   │   │   └── twos_compl.vhd
+│   │   ├── InputMux.vhd
+│   │   ├── MTRF_cell.vhd
+│   │   ├── RACCU.vhd
+│   │   ├── RLE_engine
+│   │   │   ├── RLE_engine.vhd
+│   │   │   ├── RLE_layer.vhd
+│   │   │   ├── barrel_shifter_rle.vhd
+│   │   │   ├── reg_n.vhd
+│   │   │   └── trail_zeros_cnt.vhd
+│   │   ├── RaccuAndLoop.vhd
+│   │   ├── RaccuRF.vhd
+│   │   ├── SilagoNN_dimarch.vhd
+│   │   ├── Silago_bot.vhd
+│   │   ├── Silago_bot_left_corner.vhd
+│   │   ├── Silago_bot_right_corner.vhd
+│   │   ├── Silago_top.vhd
+│   │   ├── Silago_top_left_corner.vhd
+│   │   ├── Silago_top_right_corner.vhd
+│   │   ├── addr_assign.vhd
+│   │   ├── addr_assign_drra_top_l_corner.vhd
+│   │   ├── autoloop.vhd
+│   │   ├── bus_selector.vhd
+│   │   ├── cell_config_swb.vhd
+│   │   ├── data_selector.vhd
+│   │   ├── drra_wrapper.vhd
+│   │   ├── isa.vhd
+│   │   ├── misc.vhd
+│   │   ├── priorityComponent.vhd
+│   │   ├── priorityMux.vhd
+│   │   ├── register_file.vhd
+│   │   ├── register_file_top.vhd
+│   │   ├── register_row.vhd
+│   │   ├── seq_functions_package.vhd
+│   │   ├── sequencer.vhd
+│   │   ├── shadowReg.vhd
+│   │   ├── shadowReg_AGU.vhd
+│   │   ├── silagonn.vhd
+│   │   ├── silagonn_top.vhd
+│   │   ├── silego.vhd
+│   │   ├── switchbox.vhd
+│   │   ├── tags
+│   │   ├── tb_instructions.vhd
+│   │   ├── testbench
+│   │   │   ├── MAC_test.vhd
+│   │   │   ├── Non_linear
+│   │   │   │   ├── exp_pkg.vhd
+│   │   │   │   ├── mac_pkg.vhd
+│   │   │   │   ├── sigmoid_pkg.vhd
+│   │   │   │   ├── tanh_pkg.vhd
+│   │   │   │   └── tb_DPU_nonlinear.vhd
+│   │   │   ├── tb_DPU_recon.vhd
+│   │   │   ├── tb_autoloop.vhd
+│   │   │   ├── tb_nacu_recon.vhd
+│   │   │   ├── tb_pkg_dpu.vhd
+│   │   │   └── tb_priorityMux.vhd
+│   │   ├── top_consts_types_package.vhd
+│   │   └── util_package.vhd
+│   ├── pkg_hierarchy.txt
+│   ├── silagonn_hierarchy.txt
+│   └── silego_hierarchy.txt
+├── syn
+│   ├── constraints.sdc
+│   ├── db
+│   │   ├── drra_wrapper.ddc
+│   │   ├── drra_wrapper.v
+│   │   └── pass1
+│   ├── rpt
+│   │   ├── drra_wrapper_area.txt
+│   │   ├── drra_wrapper_cells.txt
+│   │   ├── drra_wrapper_constratints.sdc
+│   │   ├── drra_wrapper_power.txt
+│   │   └── drra_wrapper_timing.txt
+│   └── scr
+│       ├── ADDER_NBITS-STRUCTURAL.syn
+│       ├── ADDER_NBITS.mr
+│       ├── ADDER_NBITS.syn
+│       ├── ADDR_ASSIGN-RTL.syn
+│       ├── ADDR_ASSIGN.mr
+│       ├── ADDR_ASSIGN.syn
+│       ├── ADDR_ASSIGN_DRRA_TOP_L_CORNER-RTL_FIRST_CELL.syn
+│       ├── ADDR_ASSIGN_DRRA_TOP_L_CORNER.mr
+│       ├── ADDR_ASSIGN_DRRA_TOP_L_CORNER.syn
+│       ├── AGU-BEHAVE.syn
+│       ├── AGU.mr
+│       ├── AGU.syn
+│       ├── AGU_RFBLOCK-BEHAVE.syn
+│       ├── AGU_RFBLOCK.mr
+│       ├── AGU_RFBLOCK.syn
+│       ├── ARCH
+│       │   ├── BEH-CELL_CONFIG_SWB.vif
+│       │   ├── BEH-RACCU.vif
+│       │   ├── BEHAVE-AGU.vif
+│       │   ├── BEHAVE-AGU_RFBLOCK.vif
+│       │   ├── BEHAVIOR-SHIFT_UNIT.vif
+│       │   ├── BEHAVIORAL-REGISTER_ROW.vif
+│       │   ├── BEHAVIOUR_RTL-INPUTMUX.vif
+│       │   ├── BEHV-SEQUENCER.vif
+│       │   ├── BHV-DIVIDER_PIPE.vif
+│       │   ├── BHV-MAXMIN_UNIT.vif
+│       │   ├── BHV-OFFSET_GEN.vif
+│       │   ├── BHV-SATURATION_UNIT.vif
+│       │   ├── BHV-TWOS_COMPL.vif
+│       │   ├── RTL-ADDR_ASSIGN.vif
+│       │   ├── RTL-AUTOLOOP.vif
+│       │   ├── RTL-BUS_SELECTOR.vif
+│       │   ├── RTL-CONF_MUL_BEH.vif
+│       │   ├── RTL-DATA_SELECTOR.vif
+│       │   ├── RTL-DPU.vif
+│       │   ├── RTL-DRRA_WRAPPER.vif
+│       │   ├── RTL-MTRF_CELL.vif
+│       │   ├── RTL-NACU.vif
+│       │   ├── RTL-PRIORITYCOMPONENT.vif
+│       │   ├── RTL-PRIORITYMUX.vif
+│       │   ├── RTL-RACCUANDLOOP.vif
+│       │   ├── RTL-RACCURF.vif
+│       │   ├── RTL-REGISTER_FILE_TOP.vif
+│       │   ├── RTL-SAT_N_ROUND.vif
+│       │   ├── RTL-SCALER.vif
+│       │   ├── RTL-SHADOWREG.vif
+│       │   ├── RTL-SHADOWREG_AGU.vif
+│       │   ├── RTL-SILAGO_BOT.vif
+│       │   ├── RTL-SILAGO_BOT_LEFT_CORNER.vif
+│       │   ├── RTL-SILAGO_BOT_RIGHT_CORNER.vif
+│       │   ├── RTL-SILAGO_TOP.vif
+│       │   ├── RTL-SILAGO_TOP_LEFT_CORNER.vif
+│       │   ├── RTL-SILAGO_TOP_RIGHT_CORNER.vif
+│       │   ├── RTL-SILEGO.vif
+│       │   ├── RTL_FIRST_CELL-ADDR_ASSIGN_DRRA_TOP_L_CORNER.vif
+│       │   ├── STRUCT-REGISTER_FILE.vif
+│       │   ├── STRUCTURAL-ADDER_NBITS.vif
+│       │   ├── STRUCTURAL-Q_FORMAT_N_TO_ONE.vif
+│       │   ├── STRUCTURAL-Q_FORMAT_ONE_TO_N.vif
+│       │   ├── STRUCTURE-SQUASH_UNIT.vif
+│       │   └── SWITCHBOX_ARCHITECTURE-SWITCHBOX.vif
+│       ├── AUTOLOOP-RTL.syn
+│       ├── AUTOLOOP.mr
+│       ├── AUTOLOOP.syn
+│       ├── BODY
+│       │   ├── BODY-DPU_PKG.vif
+│       │   ├── BODY-FUNCTIONS.vif
+│       │   ├── BODY-ISA_PACKAGE.vif
+│       │   ├── BODY-MISC.vif
+│       │   ├── BODY-NOC_TYPES_N_CONSTANTS.vif
+│       │   ├── BODY-SEQ_FUNCTIONS_PACKAGE.vif
+│       │   ├── BODY-TB_INSTRUCTIONS.vif
+│       │   └── BODY-UTIL_PACKAGE.vif
+│       ├── BUS_SELECTOR-RTL.syn
+│       ├── BUS_SELECTOR.mr
+│       ├── BUS_SELECTOR.syn
+│       ├── CELL_CONFIG_SWB-BEH.syn
+│       ├── CELL_CONFIG_SWB.mr
+│       ├── CELL_CONFIG_SWB.syn
+│       ├── CONF_MUL_BEH-RTL.syn
+│       ├── CONF_MUL_BEH.mr
+│       ├── CONF_MUL_BEH.syn
+│       ├── CROSSBAR_TYPES_N_CONSTANTS.syn
+│       ├── DATA_SELECTOR-RTL.syn
+│       ├── DATA_SELECTOR.mr
+│       ├── DATA_SELECTOR.syn
+│       ├── DIVIDER_PIPE-BHV.syn
+│       ├── DIVIDER_PIPE.mr
+│       ├── DIVIDER_PIPE.syn
+│       ├── DPU-RTL.syn
+│       ├── DPU.mr
+│       ├── DPU.syn
+│       ├── DPU_PKG.syn
+│       ├── DRRA_WRAPPER-RTL.syn
+│       ├── DRRA_WRAPPER.mr
+│       ├── DRRA_WRAPPER.syn
+│       ├── ENTI
+│       │   ├── ADDER_NBITS.vif
+│       │   ├── ADDR_ASSIGN.vif
+│       │   ├── ADDR_ASSIGN_DRRA_TOP_L_CORNER.vif
+│       │   ├── AGU.vif
+│       │   ├── AGU_RFBLOCK.vif
+│       │   ├── AUTOLOOP.vif
+│       │   ├── BUS_SELECTOR.vif
+│       │   ├── CELL_CONFIG_SWB.vif
+│       │   ├── CONF_MUL_BEH.vif
+│       │   ├── DATA_SELECTOR.vif
+│       │   ├── DIVIDER_PIPE.vif
+│       │   ├── DPU.vif
+│       │   ├── DRRA_WRAPPER.vif
+│       │   ├── INPUTMUX.vif
+│       │   ├── MAXMIN_UNIT.vif
+│       │   ├── MTRF_CELL.vif
+│       │   ├── NACU.vif
+│       │   ├── OFFSET_GEN.vif
+│       │   ├── PRIORITYCOMPONENT.vif
+│       │   ├── PRIORITYMUX.vif
+│       │   ├── Q_FORMAT_N_TO_ONE.vif
+│       │   ├── Q_FORMAT_ONE_TO_N.vif
+│       │   ├── RACCU.vif
+│       │   ├── RACCUANDLOOP.vif
+│       │   ├── RACCURF.vif
+│       │   ├── REGISTER_FILE.vif
+│       │   ├── REGISTER_FILE_TOP.vif
+│       │   ├── REGISTER_ROW.vif
+│       │   ├── SATURATION_UNIT.vif
+│       │   ├── SAT_N_ROUND.vif
+│       │   ├── SCALER.vif
+│       │   ├── SEQUENCER.vif
+│       │   ├── SHADOWREG.vif
+│       │   ├── SHADOWREG_AGU.vif
+│       │   ├── SHIFT_UNIT.vif
+│       │   ├── SILAGO_BOT.vif
+│       │   ├── SILAGO_BOT_LEFT_CORNER.vif
+│       │   ├── SILAGO_BOT_RIGHT_CORNER.vif
+│       │   ├── SILAGO_TOP.vif
+│       │   ├── SILAGO_TOP_LEFT_CORNER.vif
+│       │   ├── SILAGO_TOP_RIGHT_CORNER.vif
+│       │   ├── SILEGO.vif
+│       │   ├── SQUASH_UNIT.vif
+│       │   ├── SWITCHBOX.vif
+│       │   └── TWOS_COMPL.vif
+│       ├── FUNCTIONS.syn
+│       ├── HW_SETTING.syn
+│       ├── INPUTMUX-BEHAVIOUR_RTL.syn
+│       ├── INPUTMUX.mr
+│       ├── INPUTMUX.syn
+│       ├── ISA_PACKAGE.syn
+│       ├── MAXMIN_UNIT-BHV.syn
+│       ├── MAXMIN_UNIT.mr
+│       ├── MAXMIN_UNIT.syn
+│       ├── MISC.syn
+│       ├── MTRF_CELL-RTL.syn
+│       ├── MTRF_CELL.mr
+│       ├── MTRF_CELL.syn
+│       ├── NACU-RTL.syn
+│       ├── NACU.mr
+│       ├── NACU.syn
+│       ├── NOC_TYPES_N_CONSTANTS.syn
+│       ├── OFFSET_GEN-BHV.syn
+│       ├── OFFSET_GEN.mr
+│       ├── OFFSET_GEN.syn
+│       ├── PACK
+│       │   ├── CROSSBAR_TYPES_N_CONSTANTS.vif
+│       │   ├── DPU_PKG.vif
+│       │   ├── FUNCTIONS.vif
+│       │   ├── HW_SETTING.vif
+│       │   ├── ISA_PACKAGE.vif
+│       │   ├── MISC.vif
+│       │   ├── NOC_TYPES_N_CONSTANTS.vif
+│       │   ├── SEQ_FUNCTIONS_PACKAGE.vif
+│       │   ├── TB_INSTRUCTIONS.vif
+│       │   ├── TOP_CONSTS_TYPES_PACKAGE.vif
+│       │   └── UTIL_PACKAGE.vif
+│       ├── PRIORITYCOMPONENT-RTL.syn
+│       ├── PRIORITYCOMPONENT.mr
+│       ├── PRIORITYCOMPONENT.syn
+│       ├── PRIORITYMUX-RTL.syn
+│       ├── PRIORITYMUX.mr
+│       ├── PRIORITYMUX.syn
+│       ├── Q_FORMAT_N_TO_ONE-STRUCTURAL.syn
+│       ├── Q_FORMAT_N_TO_ONE.mr
+│       ├── Q_FORMAT_N_TO_ONE.syn
+│       ├── Q_FORMAT_ONE_TO_N-STRUCTURAL.syn
+│       ├── Q_FORMAT_ONE_TO_N.mr
+│       ├── Q_FORMAT_ONE_TO_N.syn
+│       ├── RACCU-BEH.syn
+│       ├── RACCU.mr
+│       ├── RACCU.syn
+│       ├── RACCUANDLOOP-RTL.syn
+│       ├── RACCUANDLOOP.mr
+│       ├── RACCUANDLOOP.syn
+│       ├── RACCURF-RTL.syn
+│       ├── RACCURF.mr
+│       ├── RACCURF.syn
+│       ├── REGISTER_FILE-STRUCT.syn
+│       ├── REGISTER_FILE.mr
+│       ├── REGISTER_FILE.syn
+│       ├── REGISTER_FILE_TOP-RTL.syn
+│       ├── REGISTER_FILE_TOP.mr
+│       ├── REGISTER_FILE_TOP.syn
+│       ├── REGISTER_ROW-BEHAVIORAL.syn
+│       ├── REGISTER_ROW.mr
+│       ├── REGISTER_ROW.syn
+│       ├── SATURATION_UNIT-BHV.syn
+│       ├── SATURATION_UNIT.mr
+│       ├── SATURATION_UNIT.syn
+│       ├── SAT_N_ROUND-RTL.syn
+│       ├── SAT_N_ROUND.mr
+│       ├── SAT_N_ROUND.syn
+│       ├── SCALER-RTL.syn
+│       ├── SCALER.mr
+│       ├── SCALER.syn
+│       ├── SEQUENCER-BEHV.syn
+│       ├── SEQUENCER.mr
+│       ├── SEQUENCER.syn
+│       ├── SEQ_FUNCTIONS_PACKAGE.syn
+│       ├── SHADOWREG-RTL.syn
+│       ├── SHADOWREG.mr
+│       ├── SHADOWREG.syn
+│       ├── SHADOWREG_AGU-RTL.syn
+│       ├── SHADOWREG_AGU.mr
+│       ├── SHADOWREG_AGU.syn
+│       ├── SHIFT_UNIT-BEHAVIOR.syn
+│       ├── SHIFT_UNIT.mr
+│       ├── SHIFT_UNIT.syn
+│       ├── SILAGO_BOT-RTL.syn
+│       ├── SILAGO_BOT.mr
+│       ├── SILAGO_BOT.syn
+│       ├── SILAGO_BOT_LEFT_CORNER-RTL.syn
+│       ├── SILAGO_BOT_LEFT_CORNER.mr
+│       ├── SILAGO_BOT_LEFT_CORNER.syn
+│       ├── SILAGO_BOT_RIGHT_CORNER-RTL.syn
+│       ├── SILAGO_BOT_RIGHT_CORNER.mr
+│       ├── SILAGO_BOT_RIGHT_CORNER.syn
+│       ├── SILAGO_TOP-RTL.syn
+│       ├── SILAGO_TOP.mr
+│       ├── SILAGO_TOP.syn
+│       ├── SILAGO_TOP_LEFT_CORNER-RTL.syn
+│       ├── SILAGO_TOP_LEFT_CORNER.mr
+│       ├── SILAGO_TOP_LEFT_CORNER.syn
+│       ├── SILAGO_TOP_RIGHT_CORNER-RTL.syn
+│       ├── SILAGO_TOP_RIGHT_CORNER.mr
+│       ├── SILAGO_TOP_RIGHT_CORNER.syn
+│       ├── SILEGO-RTL.syn
+│       ├── SILEGO.mr
+│       ├── SILEGO.syn
+│       ├── SQUASH_UNIT-STRUCTURE.syn
+│       ├── SQUASH_UNIT.mr
+│       ├── SQUASH_UNIT.syn
+│       ├── SWITCHBOX-SWITCHBOX_ARCHITECTURE.syn
+│       ├── SWITCHBOX.mr
+│       ├── SWITCHBOX.syn
+│       ├── TB_INSTRUCTIONS.syn
+│       ├── TOP_CONSTS_TYPES_PACKAGE.syn
+│       ├── TWOS_COMPL-BHV.syn
+│       ├── TWOS_COMPL.mr
+│       ├── TWOS_COMPL.syn
+│       ├── UTIL_PACKAGE.syn
+│       ├── WORK
+│       │   ├── ADDER_NBITS-STRUCTURAL.syn
+│       │   ├── ADDER_NBITS.mr
+│       │   ├── ADDER_NBITS.syn
+│       │   ├── ADDR_ASSIGN-RTL.syn
+│       │   ├── ADDR_ASSIGN.mr
+│       │   ├── ADDR_ASSIGN.syn
+│       │   ├── ADDR_ASSIGN_DRRA_TOP_L_CORNER-RTL_FIRST_CELL.syn
+│       │   ├── ADDR_ASSIGN_DRRA_TOP_L_CORNER.mr
+│       │   ├── ADDR_ASSIGN_DRRA_TOP_L_CORNER.syn
+│       │   ├── AGU-BEHAVE.syn
+│       │   ├── AGU.mr
+│       │   ├── AGU.syn
+│       │   ├── AGU_RFBLOCK-BEHAVE.syn
+│       │   ├── AGU_RFBLOCK.mr
+│       │   ├── AGU_RFBLOCK.syn
+│       │   ├── ARCH
+│       │   │   ├── BEH-CELL_CONFIG_SWB.vif
+│       │   │   ├── BEH-RACCU.vif
+│       │   │   ├── BEHAVE-AGU.vif
+│       │   │   ├── BEHAVE-AGU_RFBLOCK.vif
+│       │   │   ├── BEHAVIOR-SHIFT_UNIT.vif
+│       │   │   ├── BEHAVIORAL-REGISTER_ROW.vif
+│       │   │   ├── BEHAVIOUR_RTL-INPUTMUX.vif
+│       │   │   ├── BEHV-SEQUENCER.vif
+│       │   │   ├── BEHV_RTL-DIMARCHTILE_BOT.vif
+│       │   │   ├── BEHV_RTL-DIMARCHTILE_BOT_LEFT_CORNER.vif
+│       │   │   ├── BEHV_RTL-DIMARCHTILE_BOT_RIGHT_CORNER.vif
+│       │   │   ├── BEHV_RTL-DIMARCHTILE_TOP.vif
+│       │   │   ├── BEHV_RTL-DIMARCHTILE_TOP_LEFT_CORNER.vif
+│       │   │   ├── BEHV_RTL-DIMARCHTILE_TOP_RIGHT_CORNER.vif
+│       │   │   ├── BEHV_RTL-SRAM_AGU.vif
+│       │   │   ├── BEHV_RTL-STILE.vif
+│       │   │   ├── BHV-DIVIDER_PIPE.vif
+│       │   │   ├── BHV-MAXMIN_UNIT.vif
+│       │   │   ├── BHV-OFFSET_GEN.vif
+│       │   │   ├── BHV-SATURATION_UNIT.vif
+│       │   │   ├── BHV-TWOS_COMPL.vif
+│       │   │   ├── RTL-ADDR_ASSIGN.vif
+│       │   │   ├── RTL-AUTOLOOP.vif
+│       │   │   ├── RTL-BUS_SELECTOR.vif
+│       │   │   ├── RTL-CONF_MUL_BEH.vif
+│       │   │   ├── RTL-DATA_CROSSBAR.vif
+│       │   │   ├── RTL-DATA_SELECTOR.vif
+│       │   │   ├── RTL-DPU.vif
+│       │   │   ├── RTL-DRRA_WRAPPER.vif
+│       │   │   ├── RTL-ISWITCH.vif
+│       │   │   ├── RTL-MTRF_CELL.vif
+│       │   │   ├── RTL-NACU.vif
+│       │   │   ├── RTL-PRIORITYCOMPONENT.vif
+│       │   │   ├── RTL-PRIORITYMUX.vif
+│       │   │   ├── RTL-RACCUANDLOOP.vif
+│       │   │   ├── RTL-RACCURF.vif
+│       │   │   ├── RTL-REGISTER_FILE_TOP.vif
+│       │   │   ├── RTL-SAT_N_ROUND.vif
+│       │   │   ├── RTL-SCALER.vif
+│       │   │   ├── RTL-SEGMENTED_BUS.vif
+│       │   │   ├── RTL-SELECTOR.vif
+│       │   │   ├── RTL-SHADOWREG.vif
+│       │   │   ├── RTL-SHADOWREG_AGU.vif
+│       │   │   ├── RTL-SILAGO_BOT.vif
+│       │   │   ├── RTL-SILAGO_BOT_LEFT_CORNER.vif
+│       │   │   ├── RTL-SILAGO_BOT_RIGHT_CORNER.vif
+│       │   │   ├── RTL-SILAGO_TOP.vif
+│       │   │   ├── RTL-SILAGO_TOP_LEFT_CORNER.vif
+│       │   │   ├── RTL-SILAGO_TOP_RIGHT_CORNER.vif
+│       │   │   ├── RTL-SILEGO.vif
+│       │   │   ├── RTL-SOURCE_DECODER.vif
+│       │   │   ├── RTL-SOURCE_DECODER_N_FSM.vif
+│       │   │   ├── RTL-SOURCE_FSM.vif
+│       │   │   ├── RTL-SRAM_MODEL.vif
+│       │   │   ├── RTL_FIRST_CELL-ADDR_ASSIGN_DRRA_TOP_L_CORNER.vif
+│       │   │   ├── SRAM_BEHAVIOUR-SRAM.vif
+│       │   │   ├── STRUCT-REGISTER_FILE.vif
+│       │   │   ├── STRUCTURAL-ADDER_NBITS.vif
+│       │   │   ├── STRUCTURAL-Q_FORMAT_N_TO_ONE.vif
+│       │   │   ├── STRUCTURAL-Q_FORMAT_ONE_TO_N.vif
+│       │   │   ├── STRUCTURE-SQUASH_UNIT.vif
+│       │   │   └── SWITCHBOX_ARCHITECTURE-SWITCHBOX.vif
+│       │   ├── AUTOLOOP-RTL.syn
+│       │   ├── AUTOLOOP.mr
+│       │   ├── AUTOLOOP.syn
+│       │   ├── BODY
+│       │   │   ├── BODY-DPU_PKG.vif
+│       │   │   ├── BODY-FUNCTIONS.vif
+│       │   │   ├── BODY-ISA_PACKAGE.vif
+│       │   │   ├── BODY-MISC.vif
+│       │   │   ├── BODY-NOC_TYPES_N_CONSTANTS.vif
+│       │   │   ├── BODY-SEQ_FUNCTIONS_PACKAGE.vif
+│       │   │   ├── BODY-TB_INSTRUCTIONS.vif
+│       │   │   └── BODY-UTIL_PACKAGE.vif
+│       │   ├── BUS_SELECTOR-RTL.syn
+│       │   ├── BUS_SELECTOR.mr
+│       │   ├── BUS_SELECTOR.syn
+│       │   ├── CELL_CONFIG_SWB-BEH.syn
+│       │   ├── CELL_CONFIG_SWB.mr
+│       │   ├── CELL_CONFIG_SWB.syn
+│       │   ├── CONF_MUL_BEH-RTL.syn
+│       │   ├── CONF_MUL_BEH.mr
+│       │   ├── CONF_MUL_BEH.syn
+│       │   ├── CROSSBAR_TYPES_N_CONSTANTS.syn
+│       │   ├── DATA_CROSSBAR-RTL.syn
+│       │   ├── DATA_CROSSBAR.mr
+│       │   ├── DATA_CROSSBAR.syn
+│       │   ├── DATA_SELECTOR-RTL.syn
+│       │   ├── DATA_SELECTOR.mr
+│       │   ├── DATA_SELECTOR.syn
+│       │   ├── DIMARCHTILE_BOT-BEHV_RTL.syn
+│       │   ├── DIMARCHTILE_BOT.mr
+│       │   ├── DIMARCHTILE_BOT.syn
+│       │   ├── DIMARCHTILE_BOT_LEFT_CORNER-BEHV_RTL.syn
+│       │   ├── DIMARCHTILE_BOT_LEFT_CORNER.mr
+│       │   ├── DIMARCHTILE_BOT_LEFT_CORNER.syn
+│       │   ├── DIMARCHTILE_BOT_RIGHT_CORNER-BEHV_RTL.syn
+│       │   ├── DIMARCHTILE_BOT_RIGHT_CORNER.mr
+│       │   ├── DIMARCHTILE_BOT_RIGHT_CORNER.syn
+│       │   ├── DIMARCHTILE_TOP-BEHV_RTL.syn
+│       │   ├── DIMARCHTILE_TOP.mr
+│       │   ├── DIMARCHTILE_TOP.syn
+│       │   ├── DIMARCHTILE_TOP_LEFT_CORNER-BEHV_RTL.syn
+│       │   ├── DIMARCHTILE_TOP_LEFT_CORNER.mr
+│       │   ├── DIMARCHTILE_TOP_LEFT_CORNER.syn
+│       │   ├── DIMARCHTILE_TOP_RIGHT_CORNER-BEHV_RTL.syn
+│       │   ├── DIMARCHTILE_TOP_RIGHT_CORNER.mr
+│       │   ├── DIMARCHTILE_TOP_RIGHT_CORNER.syn
+│       │   ├── DIVIDER_PIPE-BHV.syn
+│       │   ├── DIVIDER_PIPE.mr
+│       │   ├── DIVIDER_PIPE.syn
+│       │   ├── DPU-RTL.syn
+│       │   ├── DPU.mr
+│       │   ├── DPU.syn
+│       │   ├── DPU_PKG.syn
+│       │   ├── DRRA_WRAPPER-RTL.syn
+│       │   ├── DRRA_WRAPPER.mr
+│       │   ├── DRRA_WRAPPER.syn
+│       │   ├── ENTI
+│       │   │   ├── ADDER_NBITS.vif
+│       │   │   ├── ADDR_ASSIGN.vif
+│       │   │   ├── ADDR_ASSIGN_DRRA_TOP_L_CORNER.vif
+│       │   │   ├── AGU.vif
+│       │   │   ├── AGU_RFBLOCK.vif
+│       │   │   ├── AUTOLOOP.vif
+│       │   │   ├── BUS_SELECTOR.vif
+│       │   │   ├── CELL_CONFIG_SWB.vif
+│       │   │   ├── CONF_MUL_BEH.vif
+│       │   │   ├── DATA_CROSSBAR.vif
+│       │   │   ├── DATA_SELECTOR.vif
+│       │   │   ├── DIMARCHTILE_BOT.vif
+│       │   │   ├── DIMARCHTILE_BOT_LEFT_CORNER.vif
+│       │   │   ├── DIMARCHTILE_BOT_RIGHT_CORNER.vif
+│       │   │   ├── DIMARCHTILE_TOP.vif
+│       │   │   ├── DIMARCHTILE_TOP_LEFT_CORNER.vif
+│       │   │   ├── DIMARCHTILE_TOP_RIGHT_CORNER.vif
+│       │   │   ├── DIVIDER_PIPE.vif
+│       │   │   ├── DPU.vif
+│       │   │   ├── DRRA_WRAPPER.vif
+│       │   │   ├── INPUTMUX.vif
+│       │   │   ├── ISWITCH.vif
+│       │   │   ├── MAXMIN_UNIT.vif
+│       │   │   ├── MTRF_CELL.vif
+│       │   │   ├── NACU.vif
+│       │   │   ├── OFFSET_GEN.vif
+│       │   │   ├── PRIORITYCOMPONENT.vif
+│       │   │   ├── PRIORITYMUX.vif
+│       │   │   ├── Q_FORMAT_N_TO_ONE.vif
+│       │   │   ├── Q_FORMAT_ONE_TO_N.vif
+│       │   │   ├── RACCU.vif
+│       │   │   ├── RACCUANDLOOP.vif
+│       │   │   ├── RACCURF.vif
+│       │   │   ├── REGISTER_FILE.vif
+│       │   │   ├── REGISTER_FILE_TOP.vif
+│       │   │   ├── REGISTER_ROW.vif
+│       │   │   ├── SATURATION_UNIT.vif
+│       │   │   ├── SAT_N_ROUND.vif
+│       │   │   ├── SCALER.vif
+│       │   │   ├── SEGMENTED_BUS.vif
+│       │   │   ├── SELECTOR.vif
+│       │   │   ├── SEQUENCER.vif
+│       │   │   ├── SHADOWREG.vif
+│       │   │   ├── SHADOWREG_AGU.vif
+│       │   │   ├── SHIFT_UNIT.vif
+│       │   │   ├── SILAGO_BOT.vif
+│       │   │   ├── SILAGO_BOT_LEFT_CORNER.vif
+│       │   │   ├── SILAGO_BOT_RIGHT_CORNER.vif
+│       │   │   ├── SILAGO_TOP.vif
+│       │   │   ├── SILAGO_TOP_LEFT_CORNER.vif
+│       │   │   ├── SILAGO_TOP_RIGHT_CORNER.vif
+│       │   │   ├── SILEGO.vif
+│       │   │   ├── SOURCE_DECODER.vif
+│       │   │   ├── SOURCE_DECODER_N_FSM.vif
+│       │   │   ├── SOURCE_FSM.vif
+│       │   │   ├── SQUASH_UNIT.vif
+│       │   │   ├── SRAM.vif
+│       │   │   ├── SRAM_AGU.vif
+│       │   │   ├── SRAM_MODEL.vif
+│       │   │   ├── STILE.vif
+│       │   │   ├── SWITCHBOX.vif
+│       │   │   └── TWOS_COMPL.vif
+│       │   ├── FUNCTIONS.syn
+│       │   ├── HW_SETTING.syn
+│       │   ├── INPUTMUX-BEHAVIOUR_RTL.syn
+│       │   ├── INPUTMUX.mr
+│       │   ├── INPUTMUX.syn
+│       │   ├── ISA_PACKAGE.syn
+│       │   ├── ISWITCH-RTL.syn
+│       │   ├── ISWITCH.mr
+│       │   ├── ISWITCH.syn
+│       │   ├── MAXMIN_UNIT-BHV.syn
+│       │   ├── MAXMIN_UNIT.mr
+│       │   ├── MAXMIN_UNIT.syn
+│       │   ├── MISC.syn
+│       │   ├── MTRF_CELL-RTL.syn
+│       │   ├── MTRF_CELL.mr
+│       │   ├── MTRF_CELL.syn
+│       │   ├── NACU-RTL.syn
+│       │   ├── NACU.mr
+│       │   ├── NACU.syn
+│       │   ├── NOC_TYPES_N_CONSTANTS.syn
+│       │   ├── OFFSET_GEN-BHV.syn
+│       │   ├── OFFSET_GEN.mr
+│       │   ├── OFFSET_GEN.syn
+│       │   ├── PACK
+│       │   │   ├── CROSSBAR_TYPES_N_CONSTANTS.vif
+│       │   │   ├── DPU_PKG.vif
+│       │   │   ├── FUNCTIONS.vif
+│       │   │   ├── HW_SETTING.vif
+│       │   │   ├── ISA_PACKAGE.vif
+│       │   │   ├── MISC.vif
+│       │   │   ├── NOC_TYPES_N_CONSTANTS.vif
+│       │   │   ├── SEQ_FUNCTIONS_PACKAGE.vif
+│       │   │   ├── TB_INSTRUCTIONS.vif
+│       │   │   ├── TOP_CONSTS_TYPES_PACKAGE.vif
+│       │   │   └── UTIL_PACKAGE.vif
+│       │   ├── PRIORITYCOMPONENT-RTL.syn
+│       │   ├── PRIORITYCOMPONENT.mr
+│       │   ├── PRIORITYCOMPONENT.syn
+│       │   ├── PRIORITYMUX-RTL.syn
+│       │   ├── PRIORITYMUX.mr
+│       │   ├── PRIORITYMUX.syn
+│       │   ├── Q_FORMAT_N_TO_ONE-STRUCTURAL.syn
+│       │   ├── Q_FORMAT_N_TO_ONE.mr
+│       │   ├── Q_FORMAT_N_TO_ONE.syn
+│       │   ├── Q_FORMAT_ONE_TO_N-STRUCTURAL.syn
+│       │   ├── Q_FORMAT_ONE_TO_N.mr
+│       │   ├── Q_FORMAT_ONE_TO_N.syn
+│       │   ├── RACCU-BEH.syn
+│       │   ├── RACCU.mr
+│       │   ├── RACCU.syn
+│       │   ├── RACCUANDLOOP-RTL.syn
+│       │   ├── RACCUANDLOOP.mr
+│       │   ├── RACCUANDLOOP.syn
+│       │   ├── RACCURF-RTL.syn
+│       │   ├── RACCURF.mr
+│       │   ├── RACCURF.syn
+│       │   ├── REGISTER_FILE-STRUCT.syn
+│       │   ├── REGISTER_FILE.mr
+│       │   ├── REGISTER_FILE.syn
+│       │   ├── REGISTER_FILE_TOP-RTL.syn
+│       │   ├── REGISTER_FILE_TOP.mr
+│       │   ├── REGISTER_FILE_TOP.syn
+│       │   ├── REGISTER_ROW-BEHAVIORAL.syn
+│       │   ├── REGISTER_ROW.mr
+│       │   ├── REGISTER_ROW.syn
+│       │   ├── SATURATION_UNIT-BHV.syn
+│       │   ├── SATURATION_UNIT.mr
+│       │   ├── SATURATION_UNIT.syn
+│       │   ├── SAT_N_ROUND-RTL.syn
+│       │   ├── SAT_N_ROUND.mr
+│       │   ├── SAT_N_ROUND.syn
+│       │   ├── SCALER-RTL.syn
+│       │   ├── SCALER.mr
+│       │   ├── SCALER.syn
+│       │   ├── SEGMENTED_BUS-RTL.syn
+│       │   ├── SEGMENTED_BUS.mr
+│       │   ├── SEGMENTED_BUS.syn
+│       │   ├── SELECTOR-RTL.syn
+│       │   ├── SELECTOR.mr
+│       │   ├── SELECTOR.syn
+│       │   ├── SEQUENCER-BEHV.syn
+│       │   ├── SEQUENCER.mr
+│       │   ├── SEQUENCER.syn
+│       │   ├── SEQ_FUNCTIONS_PACKAGE.syn
+│       │   ├── SHADOWREG-RTL.syn
+│       │   ├── SHADOWREG.mr
+│       │   ├── SHADOWREG.syn
+│       │   ├── SHADOWREG_AGU-RTL.syn
+│       │   ├── SHADOWREG_AGU.mr
+│       │   ├── SHADOWREG_AGU.syn
+│       │   ├── SHIFT_UNIT-BEHAVIOR.syn
+│       │   ├── SHIFT_UNIT.mr
+│       │   ├── SHIFT_UNIT.syn
+│       │   ├── SILAGO_BOT-RTL.syn
+│       │   ├── SILAGO_BOT.mr
+│       │   ├── SILAGO_BOT.syn
+│       │   ├── SILAGO_BOT_LEFT_CORNER-RTL.syn
+│       │   ├── SILAGO_BOT_LEFT_CORNER.mr
+│       │   ├── SILAGO_BOT_LEFT_CORNER.syn
+│       │   ├── SILAGO_BOT_RIGHT_CORNER-RTL.syn
+│       │   ├── SILAGO_BOT_RIGHT_CORNER.mr
+│       │   ├── SILAGO_BOT_RIGHT_CORNER.syn
+│       │   ├── SILAGO_TOP-RTL.syn
+│       │   ├── SILAGO_TOP.mr
+│       │   ├── SILAGO_TOP.syn
+│       │   ├── SILAGO_TOP_LEFT_CORNER-RTL.syn
+│       │   ├── SILAGO_TOP_LEFT_CORNER.mr
+│       │   ├── SILAGO_TOP_LEFT_CORNER.syn
+│       │   ├── SILAGO_TOP_RIGHT_CORNER-RTL.syn
+│       │   ├── SILAGO_TOP_RIGHT_CORNER.mr
+│       │   ├── SILAGO_TOP_RIGHT_CORNER.syn
+│       │   ├── SILEGO-RTL.syn
+│       │   ├── SILEGO.mr
+│       │   ├── SILEGO.syn
+│       │   ├── SOURCE_DECODER-RTL.syn
+│       │   ├── SOURCE_DECODER.mr
+│       │   ├── SOURCE_DECODER.syn
+│       │   ├── SOURCE_DECODER_N_FSM-RTL.syn
+│       │   ├── SOURCE_DECODER_N_FSM.mr
+│       │   ├── SOURCE_DECODER_N_FSM.syn
+│       │   ├── SOURCE_FSM-RTL.syn
+│       │   ├── SOURCE_FSM.mr
+│       │   ├── SOURCE_FSM.syn
+│       │   ├── SQUASH_UNIT-STRUCTURE.syn
+│       │   ├── SQUASH_UNIT.mr
+│       │   ├── SQUASH_UNIT.syn
+│       │   ├── SRAM-SRAM_BEHAVIOUR.syn
+│       │   ├── SRAM.mr
+│       │   ├── SRAM.syn
+│       │   ├── SRAM_AGU-BEHV_RTL.syn
+│       │   ├── SRAM_AGU.mr
+│       │   ├── SRAM_AGU.syn
+│       │   ├── SRAM_MODEL-RTL.syn
+│       │   ├── SRAM_MODEL.mr
+│       │   ├── SRAM_MODEL.syn
+│       │   ├── STILE-BEHV_RTL.syn
+│       │   ├── STILE.mr
+│       │   ├── STILE.syn
+│       │   ├── SWITCHBOX-SWITCHBOX_ARCHITECTURE.syn
+│       │   ├── SWITCHBOX.mr
+│       │   ├── SWITCHBOX.syn
+│       │   ├── TB_INSTRUCTIONS.syn
+│       │   ├── TOP_CONSTS_TYPES_PACKAGE.syn
+│       │   ├── TWOS_COMPL-BHV.syn
+│       │   ├── TWOS_COMPL.mr
+│       │   ├── TWOS_COMPL.syn
+│       │   ├── UTIL_PACKAGE.syn
+│       │   └── cksum_dir
+│       │       ├── 10119_c80d030ae5a0fbfc83e5482ae9222cb6.cksum
+│       │       ├── 13928_6bbe80937ba6466dafa41b747b1d6f80.cksum
+│       │       ├── 15888_18c34a9b752f85cfef5747d1f9d05c79.cksum
+│       │       ├── 16127_e981f10054e93a4c5a1c7e62050be5e6.cksum
+│       │       ├── 16764_5199dce4991b91db5b1539e03a6cbe44.cksum
+│       │       ├── 17671_fea70f004987e0b234bba817cf408874.cksum
+│       │       ├── 17928_e0c1c901235b6bf18bbf83943fd3022d.cksum
+│       │       ├── 18559_a47e752e62fe70ee2a89fdec6faa436a.cksum
+│       │       ├── 18952_3ba25586e500aaf314f8d06baf6fce13.cksum
+│       │       ├── 20170_8e65b61223ff3a7813c2b03088be0c33.cksum
+│       │       ├── 22309_b4a9a99833a90f2d8fa4f19127a98271.cksum
+│       │       ├── 23025_b29cc8f9cb363fa093f3b95e7f305cce.cksum
+│       │       ├── 24852_ecf644a084b9e74d4760c8e5d1c664de.cksum
+│       │       ├── 25026_04e1bef24c51e96073a645fb92c7b4ae.cksum
+│       │       ├── 26887_6458f4156fad056ed93f8173af3b96ea.cksum
+│       │       ├── 27138_3557c8fecf1d72a822fac1f49369171f.cksum
+│       │       ├── 29404_4a445ee039da89fbca75785d905b78fd.cksum
+│       │       ├── 31529_2e0dc4eee4b3ef74cdd1c42ac5d37ba5.cksum
+│       │       ├── 31566_007f64d1d733156bca8b3e2fa6a50e95.cksum
+│       │       ├── 33735_862536ae48c345cf381d86c821c27e7f.cksum
+│       │       ├── 35571_42316f042cdd540ecabeb21dc3b0a831.cksum
+│       │       ├── 35825_79d4ca290764b16ba5ee72ce70570ca1.cksum
+│       │       ├── 35891_86f386459541c3c7c3cb202a686f6e80.cksum
+│       │       ├── 36301_3bb4e3bc39cb369dd6c26986c1f3537a.cksum
+│       │       ├── 36452_00f5ff792be971d436fb97b94671b1bc.cksum
+│       │       ├── 38279_dbe061de73630f9bfb2bc43d16ed0ec1.cksum
+│       │       ├── 39035_73bcaa47c355eb7675102f5a131c15e8.cksum
+│       │       ├── 41171_adbbb52fbcabae896817b23c88cc4a9c.cksum
+│       │       ├── 43293_3e1416c1c2e2ae7fc315b9a94b286c6a.cksum
+│       │       ├── 45379_01c964dec34c7ee74b73dfd7984da45a.cksum
+│       │       ├── 46548_66d53d61c8db6ef3d49996f269f64f89.cksum
+│       │       ├── 50646_4a2c85034a8c43aef44c2c8f4be84825.cksum
+│       │       ├── 51752_967006d79c584be1cb6c16ce3410a77c.cksum
+│       │       ├── 52902_8a840066cede539e7b63e74d323ef8c5.cksum
+│       │       ├── 53182_4c9757a427fad19c169733c08c7875c7.cksum
+│       │       ├── 55597_19b3b4c411eefe96982bd38d1a9c740e.cksum
+│       │       ├── 58204_224ab15beea1f8aefbbdb8c8cb7db195.cksum
+│       │       ├── 58700_7a18c44914f86f34eaa7e85730daf412.cksum
+│       │       ├── 61563_8ca099cc9fed57afe9f78fb83ee36fce.cksum
+│       │       ├── 62959_724a3085db0e935d45bcebcf89cd3919.cksum
+│       │       ├── 64229_730c5880122e162bbd124185c2dc9900.cksum
+│       │       ├── 64540_e9e37df296e423898ef0d361f1609ba6.cksum
+│       │       ├── 65357_a38288405422846d9e8deeae23d723bb.cksum
+│       │       ├── 69424_7b0824d2374bf4059cca7434f0cd5d3d.cksum
+│       │       ├── 69794_f8dfb0f0e98f443f45e57d35703d5aae.cksum
+│       │       ├── 70275_c4bacc8d0727544f19cbc4da71332400.cksum
+│       │       ├── 70748_a6360c4f136b63f63a3eade49b0091df.cksum
+│       │       ├── 71170_fac6cfab9e72b0fbd8d3429ac1a2f9eb.cksum
+│       │       ├── 72062_b84eec918b99f6ca5dae5bf741069791.cksum
+│       │       ├── 72474_1a60bc20b32d2a2d755ad205a2667b8e.cksum
+│       │       └── 75094_464ee1f1ebf90319a256cf216f3b38d4.cksum
+│       ├── cksum_dir
+│       │   ├── 10119_c80d030ae5a0fbfc83e5482ae9222cb6.cksum
+│       │   ├── 13928_6bbe80937ba6466dafa41b747b1d6f80.cksum
+│       │   ├── 15888_18c34a9b752f85cfef5747d1f9d05c79.cksum
+│       │   ├── 16127_e981f10054e93a4c5a1c7e62050be5e6.cksum
+│       │   ├── 16764_5199dce4991b91db5b1539e03a6cbe44.cksum
+│       │   ├── 17671_fea70f004987e0b234bba817cf408874.cksum
+│       │   ├── 17928_e0c1c901235b6bf18bbf83943fd3022d.cksum
+│       │   ├── 18559_a47e752e62fe70ee2a89fdec6faa436a.cksum
+│       │   ├── 18952_3ba25586e500aaf314f8d06baf6fce13.cksum
+│       │   ├── 20170_8e65b61223ff3a7813c2b03088be0c33.cksum
+│       │   ├── 22309_b4a9a99833a90f2d8fa4f19127a98271.cksum
+│       │   ├── 23025_b29cc8f9cb363fa093f3b95e7f305cce.cksum
+│       │   ├── 24852_ecf644a084b9e74d4760c8e5d1c664de.cksum
+│       │   ├── 25026_04e1bef24c51e96073a645fb92c7b4ae.cksum
+│       │   ├── 26887_6458f4156fad056ed93f8173af3b96ea.cksum
+│       │   ├── 27138_3557c8fecf1d72a822fac1f49369171f.cksum
+│       │   ├── 29404_4a445ee039da89fbca75785d905b78fd.cksum
+│       │   ├── 31529_2e0dc4eee4b3ef74cdd1c42ac5d37ba5.cksum
+│       │   ├── 31566_007f64d1d733156bca8b3e2fa6a50e95.cksum
+│       │   ├── 33735_862536ae48c345cf381d86c821c27e7f.cksum
+│       │   ├── 35571_42316f042cdd540ecabeb21dc3b0a831.cksum
+│       │   ├── 35825_79d4ca290764b16ba5ee72ce70570ca1.cksum
+│       │   ├── 35891_86f386459541c3c7c3cb202a686f6e80.cksum
+│       │   ├── 36301_3bb4e3bc39cb369dd6c26986c1f3537a.cksum
+│       │   ├── 36452_00f5ff792be971d436fb97b94671b1bc.cksum
+│       │   ├── 38279_dbe061de73630f9bfb2bc43d16ed0ec1.cksum
+│       │   ├── 39035_73bcaa47c355eb7675102f5a131c15e8.cksum
+│       │   ├── 41171_adbbb52fbcabae896817b23c88cc4a9c.cksum
+│       │   ├── 43293_3e1416c1c2e2ae7fc315b9a94b286c6a.cksum
+│       │   ├── 45379_01c964dec34c7ee74b73dfd7984da45a.cksum
+│       │   ├── 46548_66d53d61c8db6ef3d49996f269f64f89.cksum
+│       │   ├── 50646_4a2c85034a8c43aef44c2c8f4be84825.cksum
+│       │   ├── 51752_967006d79c584be1cb6c16ce3410a77c.cksum
+│       │   ├── 52902_8a840066cede539e7b63e74d323ef8c5.cksum
+│       │   ├── 53182_4c9757a427fad19c169733c08c7875c7.cksum
+│       │   ├── 55597_19b3b4c411eefe96982bd38d1a9c740e.cksum
+│       │   ├── 58204_224ab15beea1f8aefbbdb8c8cb7db195.cksum
+│       │   ├── 58700_7a18c44914f86f34eaa7e85730daf412.cksum
+│       │   ├── 61563_8ca099cc9fed57afe9f78fb83ee36fce.cksum
+│       │   ├── 62959_724a3085db0e935d45bcebcf89cd3919.cksum
+│       │   ├── 64229_730c5880122e162bbd124185c2dc9900.cksum
+│       │   ├── 64540_e9e37df296e423898ef0d361f1609ba6.cksum
+│       │   ├── 65357_a38288405422846d9e8deeae23d723bb.cksum
+│       │   ├── 69424_7b0824d2374bf4059cca7434f0cd5d3d.cksum
+│       │   ├── 69794_f8dfb0f0e98f443f45e57d35703d5aae.cksum
+│       │   ├── 70275_c4bacc8d0727544f19cbc4da71332400.cksum
+│       │   ├── 70748_a6360c4f136b63f63a3eade49b0091df.cksum
+│       │   ├── 71170_fac6cfab9e72b0fbd8d3429ac1a2f9eb.cksum
+│       │   ├── 72062_b84eec918b99f6ca5dae5bf741069791.cksum
+│       │   ├── 72474_1a60bc20b32d2a2d755ad205a2667b8e.cksum
+│       │   └── 75094_464ee1f1ebf90319a256cf216f3b38d4.cksum
+│       ├── command.log
+│       ├── dc_bottomup.tcl
+│       ├── dc_flat.tcl
+│       ├── default.svf
+│       ├── innovus.cmd
+│       ├── innovus.log
+│       ├── innovus.logv
+│       └── transcript
+├── syn_dc.setup
+├── synopsys_dc.setup
+├── tb
+│   └── vec_add
+│       ├── const_package.vhd
+│       ├── dware
+│       │   ├── _info
+│       │   ├── _lib.qdb
+│       │   ├── _lib1_0.qdb
+│       │   ├── _lib1_0.qpg
+│       │   ├── _lib1_0.qtl
+│       │   └── _vmake
+│       ├── fill_data.sv
+│       ├── instr_list.txt
+│       ├── instruction.bin
+│       ├── macros.svh
+│       ├── name_mangling.svh
+│       ├── run_gui.do
+│       ├── simulation.tcl
+│       ├── sync_instr.json
+│       ├── sync_instr.txt
+│       ├── test_util.svh
+│       ├── test_util_files.f
+│       ├── testbench.vhd
+│       ├── transcript
+│       ├── type_def.svh
+│       ├── vec_add.m
+│       ├── vsim.wlf
+│       ├── wave.do
+│       └── work
+│           ├── @_opt
+│           │   ├── VH_HASH_DATA
+│           │   ├── _data
+│           │   │   ├── exemptWtkngT
+│           │   │   ├── exemptbNajey
+│           │   │   └── exemptyC4RI4
+│           │   ├── _lib.qdb
+│           │   ├── _lib10_0.qdb
+│           │   ├── _lib10_0.qpg
+│           │   ├── _lib10_0.qtl
+│           │   ├── _lib1_0.qdb
+│           │   ├── _lib1_0.qpg
+│           │   ├── _lib1_0.qtl
+│           │   ├── _lib2_0.qdb
+│           │   ├── _lib2_0.qpg
+│           │   ├── _lib2_0.qtl
+│           │   ├── _lib3_0.qdb
+│           │   ├── _lib3_0.qpg
+│           │   ├── _lib3_0.qtl
+│           │   ├── _lib4_0.qdb
+│           │   ├── _lib4_0.qpg
+│           │   ├── _lib4_0.qtl
+│           │   ├── _lib5_0.qdb
+│           │   ├── _lib5_0.qpg
+│           │   ├── _lib5_0.qtl
+│           │   ├── _lib6_0.qdb
+│           │   ├── _lib6_0.qpg
+│           │   ├── _lib6_0.qtl
+│           │   ├── _lib7_0.qdb
+│           │   ├── _lib7_0.qpg
+│           │   ├── _lib7_0.qtl
+│           │   ├── _lib8_0.qdb
+│           │   ├── _lib8_0.qpg
+│           │   ├── _lib8_0.qtl
+│           │   ├── _lib9_0.qdb
+│           │   ├── _lib9_0.qpg
+│           │   └── _lib9_0.qtl
+│           ├── _info
+│           ├── _lib.qdb
+│           ├── _lib1_11.qdb
+│           ├── _lib1_11.qpg
+│           ├── _lib1_11.qtl
+│           ├── _opt__lock
+│           └── _vmake
+└── tree.txt
+
+41 directories, 1271 files

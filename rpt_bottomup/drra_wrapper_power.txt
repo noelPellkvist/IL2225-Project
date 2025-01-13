@@ -1,0 +1,343 @@
+Loading db file '/opt/pdk/tsmc90/tcbn90g_110a/digital/Front_End/timing_power/tcbn90g_110a/tcbn90gtc.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+Warning: Design has unannotated black box outputs. (PWR-428)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : drra_wrapper
+Version: V-2023.12-SP4
+Date   : Mon Jan 13 13:53:41 2025
+****************************************
+
+
+Library(s) Used:
+
+    tcbn90gtc (File: /opt/pdk/tsmc90/tcbn90g_110a/digital/Front_End/timing_power/tcbn90g_110a/tcbn90gtc.db)
+
+
+Operating Conditions: NCCOM   Library: tcbn90gtc
+Wire Load Model Mode: segmented
+
+Design        Wire Load Model            Library
+------------------------------------------------
+drra_wrapper           ZeroWireload      tcbn90gtc
+Silago_top_left_corner ZeroWireload      tcbn90gtc
+Silago_bot_left_corner ZeroWireload      tcbn90gtc
+Silago_top             ZeroWireload      tcbn90gtc
+Silago_bot             ZeroWireload      tcbn90gtc
+Silago_top_right_corner
+                       ZeroWireload      tcbn90gtc
+Silago_bot_right_corner
+                       ZeroWireload      tcbn90gtc
+silego                 ZeroWireload      tcbn90gtc
+data_selector          ZeroWireload      tcbn90gtc
+bus_selector           ZeroWireload      tcbn90gtc
+addr_assign_drra_top_l_corner
+                       ZeroWireload      tcbn90gtc
+addr_assign            ZeroWireload      tcbn90gtc
+cell_config_swb        ZeroWireload      tcbn90gtc
+switchbox_16_5         ZeroWireload      tcbn90gtc
+MTRF_cell              ZeroWireload      tcbn90gtc
+InputMux_16_5_11       ZeroWireload      tcbn90gtc
+InputMux_16_5_10       ZeroWireload      tcbn90gtc
+InputMux_16_5_9        ZeroWireload      tcbn90gtc
+InputMux_16_5_8        ZeroWireload      tcbn90gtc
+InputMux_16_5_7        ZeroWireload      tcbn90gtc
+InputMux_16_5_6        ZeroWireload      tcbn90gtc
+InputMux_16_5_5        ZeroWireload      tcbn90gtc
+InputMux_16_5_4        ZeroWireload      tcbn90gtc
+InputMux_16_5_3        ZeroWireload      tcbn90gtc
+InputMux_16_5_2        ZeroWireload      tcbn90gtc
+InputMux_16_5_1        ZeroWireload      tcbn90gtc
+InputMux_16_5_0        ZeroWireload      tcbn90gtc
+sequencer              ZeroWireload      tcbn90gtc
+shadowReg              ZeroWireload      tcbn90gtc
+DPU                    ZeroWireload      tcbn90gtc
+register_file_top      ZeroWireload      tcbn90gtc
+RaccuAndLoop           ZeroWireload      tcbn90gtc
+sequencer_DW01_inc_0_DW01_inc_38
+                       ZeroWireload      tcbn90gtc
+twos_compl_16_4        ZeroWireload      tcbn90gtc
+twos_compl_16_3        ZeroWireload      tcbn90gtc
+twos_compl_16_2        ZeroWireload      tcbn90gtc
+twos_compl_16_1        ZeroWireload      tcbn90gtc
+NACU_0_0_1             ZeroWireload      tcbn90gtc
+NACU_0_0_0             ZeroWireload      tcbn90gtc
+Sat_n_round_1          ZeroWireload      tcbn90gtc
+Sat_n_round_0          ZeroWireload      tcbn90gtc
+scaler                 ZeroWireload      tcbn90gtc
+register_file          ZeroWireload      tcbn90gtc
+shadowReg_AGU_5        ZeroWireload      tcbn90gtc
+shadowReg_AGU_4        ZeroWireload      tcbn90gtc
+shadowReg_AGU_3        ZeroWireload      tcbn90gtc
+shadowReg_AGU_2        ZeroWireload      tcbn90gtc
+shadowReg_AGU_1        ZeroWireload      tcbn90gtc
+shadowReg_AGU_0        ZeroWireload      tcbn90gtc
+AGU_3                  ZeroWireload      tcbn90gtc
+AGU_2                  ZeroWireload      tcbn90gtc
+AGU_RFblock_1          ZeroWireload      tcbn90gtc
+AGU_1                  ZeroWireload      tcbn90gtc
+AGU_0                  ZeroWireload      tcbn90gtc
+AGU_RFblock_0          ZeroWireload      tcbn90gtc
+autoloop               ZeroWireload      tcbn90gtc
+RACCU                  ZeroWireload      tcbn90gtc
+RaccuRF                ZeroWireload      tcbn90gtc
+twos_compl_16_4_DW01_inc_0_DW01_inc_37
+                       ZeroWireload      tcbn90gtc
+twos_compl_16_3_DW01_inc_0_DW01_inc_36
+                       ZeroWireload      tcbn90gtc
+twos_compl_16_2_DW01_inc_0_DW01_inc_35
+                       ZeroWireload      tcbn90gtc
+twos_compl_16_1_DW01_inc_0_DW01_inc_34
+                       ZeroWireload      tcbn90gtc
+divider_pipe           ZeroWireload      tcbn90gtc
+twos_compl_16_0        ZeroWireload      tcbn90gtc
+Squash_Unit_16_11      ZeroWireload      tcbn90gtc
+conf_mul_Beh_16_2_1    ZeroWireload      tcbn90gtc
+adder_nbits_32_2_1     ZeroWireload      tcbn90gtc
+Saturation_Unit_1      ZeroWireload      tcbn90gtc
+Maxmin_Unit_16_1       ZeroWireload      tcbn90gtc
+conf_mul_Beh_16_2_0    ZeroWireload      tcbn90gtc
+adder_nbits_32_2_0     ZeroWireload      tcbn90gtc
+Saturation_Unit_0      ZeroWireload      tcbn90gtc
+Maxmin_Unit_16_0       ZeroWireload      tcbn90gtc
+scaler_DW_mult_tc_5    ZeroWireload      tcbn90gtc
+scaler_DW_mult_tc_6    ZeroWireload      tcbn90gtc
+scaler_DW_mult_tc_7    ZeroWireload      tcbn90gtc
+scaler_DW_mult_tc_8    ZeroWireload      tcbn90gtc
+scaler_DW_mult_tc_9    ZeroWireload      tcbn90gtc
+register_row_63        ZeroWireload      tcbn90gtc
+register_row_62        ZeroWireload      tcbn90gtc
+register_row_61        ZeroWireload      tcbn90gtc
+register_row_60        ZeroWireload      tcbn90gtc
+register_row_59        ZeroWireload      tcbn90gtc
+register_row_58        ZeroWireload      tcbn90gtc
+register_row_57        ZeroWireload      tcbn90gtc
+register_row_56        ZeroWireload      tcbn90gtc
+register_row_55        ZeroWireload      tcbn90gtc
+register_row_54        ZeroWireload      tcbn90gtc
+register_row_53        ZeroWireload      tcbn90gtc
+register_row_52        ZeroWireload      tcbn90gtc
+register_row_51        ZeroWireload      tcbn90gtc
+register_row_50        ZeroWireload      tcbn90gtc
+register_row_49        ZeroWireload      tcbn90gtc
+register_row_48        ZeroWireload      tcbn90gtc
+register_row_47        ZeroWireload      tcbn90gtc
+register_row_46        ZeroWireload      tcbn90gtc
+register_row_45        ZeroWireload      tcbn90gtc
+register_row_44        ZeroWireload      tcbn90gtc
+register_row_43        ZeroWireload      tcbn90gtc
+register_row_42        ZeroWireload      tcbn90gtc
+register_row_41        ZeroWireload      tcbn90gtc
+register_row_40        ZeroWireload      tcbn90gtc
+register_row_39        ZeroWireload      tcbn90gtc
+register_row_38        ZeroWireload      tcbn90gtc
+register_row_37        ZeroWireload      tcbn90gtc
+register_row_36        ZeroWireload      tcbn90gtc
+register_row_35        ZeroWireload      tcbn90gtc
+register_row_34        ZeroWireload      tcbn90gtc
+register_row_33        ZeroWireload      tcbn90gtc
+register_row_32        ZeroWireload      tcbn90gtc
+register_row_31        ZeroWireload      tcbn90gtc
+register_row_30        ZeroWireload      tcbn90gtc
+register_row_29        ZeroWireload      tcbn90gtc
+register_row_28        ZeroWireload      tcbn90gtc
+register_row_27        ZeroWireload      tcbn90gtc
+register_row_26        ZeroWireload      tcbn90gtc
+register_row_25        ZeroWireload      tcbn90gtc
+register_row_24        ZeroWireload      tcbn90gtc
+register_row_23        ZeroWireload      tcbn90gtc
+register_row_22        ZeroWireload      tcbn90gtc
+register_row_21        ZeroWireload      tcbn90gtc
+register_row_20        ZeroWireload      tcbn90gtc
+register_row_19        ZeroWireload      tcbn90gtc
+register_row_18        ZeroWireload      tcbn90gtc
+register_row_17        ZeroWireload      tcbn90gtc
+register_row_16        ZeroWireload      tcbn90gtc
+register_row_15        ZeroWireload      tcbn90gtc
+register_row_14        ZeroWireload      tcbn90gtc
+register_row_13        ZeroWireload      tcbn90gtc
+register_row_12        ZeroWireload      tcbn90gtc
+register_row_11        ZeroWireload      tcbn90gtc
+register_row_10        ZeroWireload      tcbn90gtc
+register_row_9         ZeroWireload      tcbn90gtc
+register_row_8         ZeroWireload      tcbn90gtc
+register_row_7         ZeroWireload      tcbn90gtc
+register_row_6         ZeroWireload      tcbn90gtc
+register_row_5         ZeroWireload      tcbn90gtc
+register_row_4         ZeroWireload      tcbn90gtc
+register_row_3         ZeroWireload      tcbn90gtc
+register_row_2         ZeroWireload      tcbn90gtc
+register_row_1         ZeroWireload      tcbn90gtc
+register_row_0         ZeroWireload      tcbn90gtc
+AGU_3_DW01_add_0_DW01_add_8
+                       ZeroWireload      tcbn90gtc
+AGU_3_DW01_sub_0_DW01_sub_4
+                       ZeroWireload      tcbn90gtc
+AGU_3_DW01_add_1_DW01_add_9
+                       ZeroWireload      tcbn90gtc
+AGU_2_DW01_add_0_DW01_add_6
+                       ZeroWireload      tcbn90gtc
+AGU_2_DW01_sub_0_DW01_sub_3
+                       ZeroWireload      tcbn90gtc
+AGU_2_DW01_add_1_DW01_add_7
+                       ZeroWireload      tcbn90gtc
+AGU_1_DW01_add_0_DW01_add_4
+                       ZeroWireload      tcbn90gtc
+AGU_1_DW01_sub_0_DW01_sub_2
+                       ZeroWireload      tcbn90gtc
+AGU_1_DW01_add_1_DW01_add_5
+                       ZeroWireload      tcbn90gtc
+AGU_0_DW01_add_0_DW01_add_2
+                       ZeroWireload      tcbn90gtc
+AGU_0_DW01_sub_0_DW01_sub_1
+                       ZeroWireload      tcbn90gtc
+AGU_0_DW01_add_1_DW01_add_3
+                       ZeroWireload      tcbn90gtc
+priorityMux_2_1_4_4_4_1
+                       ZeroWireload      tcbn90gtc
+priorityMux_2_1_4_4_4_0
+                       ZeroWireload      tcbn90gtc
+autoloop_DW01_add_0_DW01_add_39
+                       ZeroWireload      tcbn90gtc
+autoloop_DW01_add_1_DW01_add_40
+                       ZeroWireload      tcbn90gtc
+autoloop_DW01_add_2_DW01_add_41
+                       ZeroWireload      tcbn90gtc
+autoloop_DW01_add_3_DW01_add_42
+                       ZeroWireload      tcbn90gtc
+RACCU_DW01_sub_0_DW01_sub_10
+                       ZeroWireload      tcbn90gtc
+RACCU_DW01_add_0_DW01_add_38
+                       ZeroWireload      tcbn90gtc
+twos_compl_16_0_DW01_inc_0_DW01_inc_33
+                       ZeroWireload      tcbn90gtc
+Q_format_n_to_one_16_11_11
+                       ZeroWireload      tcbn90gtc
+offset_gen_16_11       ZeroWireload      tcbn90gtc
+conf_mul_Beh_9_1_1     ZeroWireload      tcbn90gtc
+conf_mul_Beh_8_1_1     ZeroWireload      tcbn90gtc
+conf_mul_Beh_16_2_1_DW01_add_0_DW01_add_27
+                       ZeroWireload      tcbn90gtc
+conf_mul_Beh_16_2_1_DW01_add_2_DW01_add_29
+                       ZeroWireload      tcbn90gtc
+conf_mul_Beh_16_2_1_DW_mult_tc_2
+                       ZeroWireload      tcbn90gtc
+conf_mul_Beh_16_2_1_DW_mult_tc_3
+                       ZeroWireload      tcbn90gtc
+adder_nbits_32_2_1_DW01_add_0_DW01_add_23
+                       ZeroWireload      tcbn90gtc
+adder_nbits_32_2_1_DW01_add_1_DW01_add_24
+                       ZeroWireload      tcbn90gtc
+adder_nbits_32_2_1_DW01_add_2_DW01_add_25
+                       ZeroWireload      tcbn90gtc
+adder_nbits_32_2_1_DW01_add_3_DW01_add_26
+                       ZeroWireload      tcbn90gtc
+Maxmin_Unit_16_1_DW01_cmp6_0_DW01_cmp6_31
+                       ZeroWireload      tcbn90gtc
+conf_mul_Beh_9_1_0     ZeroWireload      tcbn90gtc
+conf_mul_Beh_8_1_0     ZeroWireload      tcbn90gtc
+conf_mul_Beh_16_2_0_DW01_add_0_DW01_add_14
+                       ZeroWireload      tcbn90gtc
+conf_mul_Beh_16_2_0_DW01_add_2_DW01_add_16
+                       ZeroWireload      tcbn90gtc
+conf_mul_Beh_16_2_0_DW_mult_tc_2
+                       ZeroWireload      tcbn90gtc
+conf_mul_Beh_16_2_0_DW_mult_tc_3
+                       ZeroWireload      tcbn90gtc
+adder_nbits_32_2_0_DW01_add_0_DW01_add_10
+                       ZeroWireload      tcbn90gtc
+adder_nbits_32_2_0_DW01_add_1_DW01_add_11
+                       ZeroWireload      tcbn90gtc
+adder_nbits_32_2_0_DW01_add_2_DW01_add_12
+                       ZeroWireload      tcbn90gtc
+adder_nbits_32_2_0_DW01_add_3_DW01_add_13
+                       ZeroWireload      tcbn90gtc
+Maxmin_Unit_16_0_DW01_cmp6_0_DW01_cmp6_30
+                       ZeroWireload      tcbn90gtc
+priorityMux_2_0_4_2_4_1
+                       ZeroWireload      tcbn90gtc
+priorityMux_2_0_4_2_4_0
+                       ZeroWireload      tcbn90gtc
+conf_mul_Beh_9_1_1_DW01_add_0_DW01_add_33
+                       ZeroWireload      tcbn90gtc
+conf_mul_Beh_9_1_1_DW_mult_tc_4
+                       ZeroWireload      tcbn90gtc
+conf_mul_Beh_9_1_1_DW_mult_tc_5
+                       ZeroWireload      tcbn90gtc
+conf_mul_Beh_9_1_1_DW_mult_tc_6
+                       ZeroWireload      tcbn90gtc
+conf_mul_Beh_9_1_1_DW_mult_tc_7
+                       ZeroWireload      tcbn90gtc
+conf_mul_Beh_8_1_1_DW01_add_0_DW01_add_30
+                       ZeroWireload      tcbn90gtc
+conf_mul_Beh_8_1_1_DW_mult_tc_4
+                       ZeroWireload      tcbn90gtc
+conf_mul_Beh_8_1_1_DW_mult_tc_5
+                       ZeroWireload      tcbn90gtc
+conf_mul_Beh_8_1_1_DW_mult_tc_6
+                       ZeroWireload      tcbn90gtc
+conf_mul_Beh_8_1_1_DW_mult_tc_7
+                       ZeroWireload      tcbn90gtc
+conf_mul_Beh_9_1_0_DW01_add_0_DW01_add_20
+                       ZeroWireload      tcbn90gtc
+conf_mul_Beh_9_1_0_DW_mult_tc_4
+                       ZeroWireload      tcbn90gtc
+conf_mul_Beh_9_1_0_DW_mult_tc_5
+                       ZeroWireload      tcbn90gtc
+conf_mul_Beh_9_1_0_DW_mult_tc_6
+                       ZeroWireload      tcbn90gtc
+conf_mul_Beh_9_1_0_DW_mult_tc_7
+                       ZeroWireload      tcbn90gtc
+conf_mul_Beh_8_1_0_DW01_add_0_DW01_add_17
+                       ZeroWireload      tcbn90gtc
+conf_mul_Beh_8_1_0_DW_mult_tc_4
+                       ZeroWireload      tcbn90gtc
+conf_mul_Beh_8_1_0_DW_mult_tc_5
+                       ZeroWireload      tcbn90gtc
+conf_mul_Beh_8_1_0_DW_mult_tc_6
+                       ZeroWireload      tcbn90gtc
+conf_mul_Beh_8_1_0_DW_mult_tc_7
+                       ZeroWireload      tcbn90gtc
+priorityComponent_2_1  ZeroWireload      tcbn90gtc
+priorityComponent_2_0  ZeroWireload      tcbn90gtc
+
+
+Global Operating Voltage = 1    
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+Attributes
+----------
+i - Including register clock pin internal power
+
+
+  Cell Internal Power  =  44.3912 mW   (87%)
+  Net Switching Power  =   6.5592 mW   (13%)
+                         ---------
+Total Dynamic Power    =  50.9504 mW  (100%)
+
+Cell Leakage Power     =   5.0337 mW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network     43.9908            5.8948        2.4351e+04           49.9100  (  89.19%)  i
+register           0.3058        3.1693e-02        1.6005e+06            1.9380  (   3.46%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational  8.7110e-02            0.6124        3.4088e+06            4.1084  (   7.34%)
+--------------------------------------------------------------------------------------------------
+Total             44.3837 mW         6.5389 mW     5.0337e+06 nW        55.9563 mW
+1

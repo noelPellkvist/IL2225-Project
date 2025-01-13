@@ -1,0 +1,57 @@
+Warning: Design 'drra_wrapper' has '16' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : cell
+Design : drra_wrapper
+Version: V-2023.12-SP4
+Date   : Tue Dec 17 12:05:37 2024
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+Silago_bot_inst_1_1       Silago_bot_0                    210901.826022
+                                                                    b, h, n
+Silago_bot_inst_2_1       Silago_bot_5                    210906.664421
+                                                                    b, h, n
+Silago_bot_inst_3_1       Silago_bot_4                    210907.470821
+                                                                    b, h, n
+Silago_bot_inst_4_1       Silago_bot_3                    210901.826022
+                                                                    b, h, n
+Silago_bot_inst_5_1       Silago_bot_2                    210906.664421
+                                                                    b, h, n
+Silago_bot_inst_6_1       Silago_bot_1                    210903.438821
+                                                                    b, h, n
+Silago_bot_l_corner_inst_0_1
+                          Silago_bot_left_corner          210882.472420
+                                                                    b, h, n
+Silago_bot_r_corner_inst_7_1
+                          Silago_bot_right_corner         210262.350810
+                                                                    b, h, n
+Silago_top_inst_1_0       Silago_top_0                    216986.920544
+                                                                    b, h, n
+Silago_top_inst_2_0       Silago_top_5                    216986.920544
+                                                                    b, h, n
+Silago_top_inst_3_0       Silago_top_4                    216988.533344
+                                                                    b, h, n
+Silago_top_inst_4_0       Silago_top_3                    216987.726944
+                                                                    b, h, n
+Silago_top_inst_5_0       Silago_top_2                    216989.339744
+                                                                    b, h, n
+Silago_top_inst_6_0       Silago_top_1                    216983.694944
+                                                                    b, h, n
+Silago_top_l_corner_inst_0_0
+                          Silago_top_left_corner          216764.354140
+                                                                    b, h, n
+Silago_top_r_corner_inst_7_0
+                          Silago_top_right_corner         216317.608533
+                                                                    b, h, n
+--------------------------------------------------------------------------------
+Total 16 cells                                            3421577.812497
+1
