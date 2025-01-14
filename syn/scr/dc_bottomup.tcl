@@ -68,7 +68,7 @@ proc nth_pass {n} {
 	#5. analyze divider_pipe
 	analyze -format VHDL -lib WORK ${SOURCE_DIR}/mtrf/DPU/divider_pipe.vhd
 	#6. elaborate divider_pipe
-	elaborate divider_pipe	
+	elaborate divider_pipe -lib WORK -update
 	#7. set the current design to divider_pipe, Is done automaticly by elaborate
 	#current_design = divider_pipe	
 	#8. link
@@ -96,7 +96,7 @@ proc nth_pass {n} {
 	    analyze -format VHDL -lib WORK "${SOURCE_DIR}/${filename}"
 	}
 	#13. elaborate silego
-	elaborate silego
+	elaborate silego -lib WORK -update
 	#14. set the current design to silego
 	#current_design = silego
 	#throw {ARITH DIVZERO {divide by zero}} {divide by zero}
@@ -138,8 +138,9 @@ proc nth_pass {n} {
 	}
 	foreach design [array names remaining_designs] {
    		puts "\n=======Will now compile: $design ======\n" 
-		analyze -format VHDL -lib WORK $design
-		elaborate $design
+		analyze -format VHDL -lib WORK $design	
+		elaborate $design -lib WORK -update
+		current_design $design
 		link
 		uniquify
 
@@ -159,11 +160,11 @@ puts "\n\n\n=============\n"
     	#30. elaborate drra_wrapper
 	#31. set current design to drra_wrapper
 	analyze -format VHDL -lib WORK drra_wrapper
-	elaborate drra_wrapper
+	elaborate drra_wrapper -lib WORK -update
 	#32. set dont touch for divider pipe and ALL tiles
 	dont_touch divider_pipe true
 	dont_touch silego true
-	foreach {design} [array get remaining_designs] {
+	foreach design [array names remaining_designs] {
    		dont_touch $design true
 	}
 	#33. source constraints
@@ -195,8 +196,8 @@ puts "Reporting"
 
 #EXECUTE N PASSES OF THE ABOVE FUNCTION. DECIDE ON A REASONABLE N.
 #We test with 2 passes
-#nth_pass 1
-nth_pass 2 
+nth_pass 1
+#nth_pass 2 
 #nth_pass 3
 
 #37. Set current design to drra_wrapper 
