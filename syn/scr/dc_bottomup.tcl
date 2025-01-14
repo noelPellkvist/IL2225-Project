@@ -179,11 +179,11 @@ puts "Reporting"
 
 
     	#36. characterize constraints of silego and divider_pipe
-	current_design = divider_pipe
+	current_design divider_pipe
 	set file_path "${REPORT_DIR}/divider_pipe_${n}_constratints.sdc"
 	report_constraints > $file_path
 
-	current_design = silego
+	current_design silego
 	set file_path "${REPORT_DIR}/silego_${n}_constratints.sdc"
 	report_constraints > $file_path
 
@@ -195,12 +195,12 @@ puts "Reporting"
 
 #EXECUTE N PASSES OF THE ABOVE FUNCTION. DECIDE ON A REASONABLE N.
 #We test with 2 passes
-nth_pass 1
-#nth_pass 2 
+#nth_pass 1
+nth_pass 2 
 #nth_pass 3
 
 #37. Set current design to drra_wrapper 
-current_design = drra_wrapper
+current_design drra_wrapper
 #38. Report the final timing, power, area.
 report_constraints > ${REPORT_DIR}/drra_wrapper_constratints.sdc
 report_area > ${REPORT_DIR}/drra_wrapper_area.txt
