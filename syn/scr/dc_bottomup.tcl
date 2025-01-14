@@ -66,7 +66,7 @@ proc nth_pass {n} {
 	
 	#Next we will compile divider_pipe first, ${SOURCE_DIR}/mtrf/DPU/divider_pipe.vhd. As the divider is a big structure We would like to import constraints in the next pass over divider pipe
 	#5. analyze divider_pipe
-	analyze -f vhdl ${SOURCE_DIR}/mtrf/DPU/divider_pipe.vhd
+	analyze -format VHDL -lib WORK ${SOURCE_DIR}/mtrf/DPU/divider_pipe.vhd
 	#6. elaborate divider_pipe
 	elaborate divider_pipe	
 	#7. set the current design to divider_pipe, Is done automaticly by elaborate
@@ -136,9 +136,9 @@ proc nth_pass {n} {
 		Silago_bot_left_corner
 		Silago_bot_right_corner
 	}
-	foreach {design} [array get remaining_designs] {
+	foreach design [array names remaining_designs] {
    		puts "\n=======Will now compile: $design ======\n" 
-		analyze $design
+		analyze -format VHDL -lib WORK $design
 		elaborate $design
 		link
 		uniquify
@@ -158,7 +158,7 @@ puts "\n\n\n=============\n"
 	#29. analyze drra_wrapper
     	#30. elaborate drra_wrapper
 	#31. set current design to drra_wrapper
-	analyze drra_wrapper
+	analyze -format VHDL -lib WORK drra_wrapper
 	elaborate drra_wrapper
 	#32. set dont touch for divider pipe and ALL tiles
 	dont_touch divider_pipe true
@@ -171,7 +171,8 @@ puts "\n\n\n=======Finished Compilation nr $n ======\n"
 puts "Reporting"
 	source ${SYN_DIR}/constraints.sdc
     	#34. report timing of drra wrapper in the current pass
-	report_timing > ${REPORT_DIR}/drra_wrapper_timing_${n}.txt
+	set file_path "${REPORT_DIR}/drra_wrapper_timing_${n}.txt"
+	report_timing > $file_path
 
 
 
@@ -179,10 +180,12 @@ puts "Reporting"
 
     	#36. characterize constraints of silego and divider_pipe
 	current_design = divider_pipe
-	report_constraints > ${REPORT_DIR}/divider_pipe_${n}_constratints.sdc
+	set file_path "${REPORT_DIR}/divider_pipe_${n}_constratints.sdc"
+	report_constraints > $file_path
 
 	current_design = silego
-	report_constraints > ${REPORT_DIR}/silego_${n}_constratints.sdc
+	set file_path "${REPORT_DIR}/silego_${n}_constratints.sdc"
+	report_constraints > $file_path
 
 	#35. write_ddc from the current pass
 	write -hierarchy -format ddc -output ${OUT_DIR}/drra_wrapper_${n}.ddc
